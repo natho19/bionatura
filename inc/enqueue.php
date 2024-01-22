@@ -7,9 +7,7 @@ function bionatura_load_scripts() {
     // JS
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', ['jquery'], null, true);
     wp_enqueue_script('jquery.fancybox', get_template_directory_uri() . '/assets/js/jquery.fancybox.js', ['jquery'], null, true);
-    wp_enqueue_script('jquery.style.switcher', get_template_directory_uri() . '/assets/js/jquery.style.switcher.min.js', ['jquery'], null, true);
     wp_enqueue_script('jquery.flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.min.js', ['jquery'], null, true);
-    wp_enqueue_script('color-scheme', get_template_directory_uri() . '/assets/js/color-scheme.js', ['jquery'], null, true);
     wp_enqueue_script('owl', get_template_directory_uri() . '/assets/js/owl.js', ['jquery'], null, true);
     wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', [], null, true);
     wp_enqueue_script('isotope', get_template_directory_uri() . '/assets/js/isotope.min.js', ['jquery'], null, true);

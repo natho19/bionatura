@@ -6,8 +6,5 @@
 @import url('./flexslider.css');
 @import url('./font-awesome.min.css');
 @import url('./style.css');
-@import url('./scss/elements/theme-css.css');
-@import url('./scss/elements/color-switcher/color.css');
-@import url('./woocommerce-layout.css');
-@import url('./woocommerce.css');
+@import url('./theme-css.css');
 @import url('./custom.css');

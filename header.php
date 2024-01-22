@@ -18,51 +18,8 @@
 </head>
 <body class="theme-creote">
     <div id="page" class="page_wapper hfeed site">
-
-        <div class="style-switcher">
-            <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
-            <h3>Color Skins</h3>
-            <ul id="colorschemeOptions" title="Switch Color" data-css-path="assets/css/scss/elements/color-switcher/">
-                <li>
-                <a href="#" data-theme="color" style="background-color: #078586;"> </a>
-                </li>
-                <li>
-                <a href="#" data-theme="color1" style="background-color: #e5102a;"> </a>
-                </li>
-                <li>
-                <a href="#" data-theme="color2" style="background-color: #3ead3c;"> </a>
-                </li>
-                <li>
-                <a href="#" data-theme="color3" style="background-color: #fed000;"> </a>
-                </li>
-                <li>
-                <a href="#" data-theme="color4" style="background-color: #ff5538;"> </a>
-                </li>
-                <li>
-                <a href="#" data-theme="color5" style="background-color: #246af4;"> </a>
-                </li>
-            </ul>
-        </div>
-
         <!---============== wrapper_full =================-->
         <div id="wrapper_full" class="content_all_warpper">
-            <!----mini cart----->
-            <div class="mini_cart_togglers fixed_cart">
-                <div class="mini-cart-count">
-                    0
-                </div>
-                <i class="icon-shopping-cart"></i>
-            </div>
-            <!----mini cart----->
-
-            <!----preloader----->
-            <div class="preloader-wrap">
-                <div class="preloader" style="background-image:url(<?= BIONATURA_IMG_URL . 'preloader.gif'; ?>)">
-                </div>
-                <div class="overlay"></div>
-            </div>
-            <!----preloader----->
-
             <!----header----->
             <div class="header_area" id="header_contents">
                 <div class="top_bar style_one">
@@ -546,13 +503,10 @@
                                 <div class="header_right_content">
                                     <ul>
                                         <li>
-                                        <button type="button" class="search-toggler"><i class="icon-search"></i></button>
+                                            <button type="button" class="search-toggler"><i class="icon-search"></i></button>
                                         </li>
                                         <li class="header-button">
-                                        <a href="#" target="_blank" rel="" class="theme-btn one"> Get In Touch </a>
-                                        </li>
-                                        <li>
-                                        <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                            <a href="#" target="_blank" rel="" class="theme-btn one"> Get In Touch </a>
                                         </li>
                                     </ul>
                                 </div>
