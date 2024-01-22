@@ -1,0 +1,8 @@
+TODO:
+- Homepage
+- A Propos
+- Notre Mission
+- Contact
+
+FIXME:
+- 2 logos dans le header
