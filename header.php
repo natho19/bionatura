@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Bio Natura</title>
     <!-- Fav Icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= BIONATURA_IMG_URL . 'favicon.ico'; ?>" type="image/x-icon">
     <!-- Fav Icon -->
     <!-- Google Fonts -->
     <link rel='stylesheet'
@@ -57,7 +57,7 @@
 
             <!----preloader----->
             <div class="preloader-wrap">
-                <div class="preloader" style="background-image:url(assets/images/preloader.gif)">
+                <div class="preloader" style="background-image:url(<?= BIONATURA_IMG_URL . 'preloader.gif'; ?>)">
                 </div>
                 <div class="overlay"></div>
             </div>
@@ -124,8 +124,8 @@
                             <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
                             <div class="header_logo_box">
                                 <a href="index-2.html" class="logo navbar-brand">
-                                    <img src="assets/images/logo-default.png" alt="Creote Elementor" class="logo_default">
-                                    <img src="assets/images/logo-default.png" alt="Creote Elementor" class="logo__sticky">
+                                    <img src="<?= BIONATURA_IMG_URL . 'logo-default.png'; ?>" alt="Creote Elementor" class="logo_default">
+                                    <img src="<?= BIONATURA_IMG_URL . 'logo-default.png'; ?>" alt="Creote Elementor" class="logo__sticky">
                                 </a>
                             </div>
                             </div>
