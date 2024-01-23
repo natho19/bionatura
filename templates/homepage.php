@@ -66,7 +66,7 @@
 <!---slider-end--->
 
 <!---image-box-section---->
-<section class="image-box-section">
+<section class="image-box-section bg_light_1">
     <!--===============spacing==============-->
     <div class="pd_top_80"></div>
     <!--===============spacing==============-->
@@ -74,14 +74,14 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
                 <div class="image_boxes style_three">
-                    <img src="<?= BIONATURA_IMG_URL . 'about/about-8.jpg'; ?>" class="img-fluid height_500 object-fit-cover" alt="image">
+                    <img src="<?= BIONATURA_IMG_URL . 'about/about-8.jpg'; ?>" class="img-fluid object-fit-cover" alt="image">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
                 <div class="title_all_box style_one dark_color">
                     <div class="title_sections ">
-                        <div class="before_title"> Dedicated Team </div>
-                        <h2>Professional Individuals</h2>
+                        <div class="before_title">Qui sommes-nous ?</div>
+                        <h2>A propos</h2>
                         <p>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut voluptate, quisquam officiis dignissimos cupiditate quas non dolore quia? Asperiores, ipsa natus. Illum fuga placeat fugiat perferendis sunt. Reiciendis, corporis?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt illo. Fuga perferendis at in.</p>
@@ -100,5 +100,149 @@
     <!--===============spacing==============-->
 </section>
 <!---image-box-section-end---->
+
+<!---gallery-section---->
+<section class="gallery">
+    <!--===============spacing==============-->
+    <div class="pd_top_80"></div>
+    <!--===============spacing==============-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title_all_box style_one text-center dark_color">
+                <div class="title_sections">
+                    <div class="before_title">Galerie</div>
+                    <h2>Bio Natura en images</h2>
+                    <p>We work with your company to identify position</p>
+                </div>
+            </div>
+            <!--===============spacing==============-->
+            <div class="pd_bottom_20"></div>
+            <!--===============spacing==============-->
+            <div class="col-lg-7 col-md-12">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-2.jpg'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . 'about/about-2.jpg'; ?>" class="img-fluid" alt="img" />
+                        </li>
+                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-3.jpg'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . 'about/about-3.jpg'; ?>" class="img-fluid" alt="img" />
+                        </li>
+                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        </li>
+                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        </li>
+                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        </li>
+                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div>
+   <!--===============spacing==============-->
+   <div class="pd_top_80"></div>
+    <!--===============spacing==============-->
+</section>
+<!---gallery-section-end---->
+
+<!---service two---->
+<section class="service-section-two bg_light_1">
+    <!--===============spacing==============-->
+    <div class="pd_top_80"></div>
+    <!--===============spacing==============-->
+    <div class="container pd_zero">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title_all_box style_one text-center dark_color">
+                    <div class="title_sections">
+                        <div class="before_title">Comment est organisée notre production ?</div>
+                        <h2>Procédure de Production</h2>
+                    </div>
+                </div>
+            </div>
+            <!--===============spacing==============-->
+            <div class="mr_bottom_70"></div>
+            <!--===============spacing==============-->
+        </div>
+        <div class="row gutter_15px">
+            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="service_box style_three dark_color">
+                    <div class="service_content">
+                        <div class="content_inner">
+                            <span class="icon-play"><i></i></span>
+                            <small class="nom">01</small>
+                            <h2>Employee Compensation</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="service_box style_three dark_color">
+                    <div class="service_content">
+                        <div class="content_inner">
+                            <span class="icon-play"><i></i></span>
+                            <small class="nom">02</small>
+                            <h2>Health Care Benefits</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="service_box style_three dark_color">
+                    <div class="service_content">
+                        <div class="content_inner">
+                            <span class="icon-play"><i></i></span>
+                            <small class="nom">03</small>
+                            <h2>Talent Management</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="service_box style_three dark_color">
+                    <div class="service_content">
+                        <div class="content_inner">
+                            <span class="icon-play"><i></i></span>
+                            <small class="nom">04</small>
+                            <h2>Risk Management</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===============spacing==============-->
+    <div class="pd_bottom_80"></div>
+    <!--===============spacing==============-->
+</section>
+<!---service two end---->
+
+<!---call to action--->
+<section class="call-to-action">
+    <div class="call_to_action style_one">
+        <div class="image">
+            <img src="<?= BIONATURA_IMG_URL . 'cal-action-bg-2.jpg'; ?>" class="img-fluid" alt="image">
+        </div>
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left_content">
+                        <div class="main_content">
+                            <h1>Organisation du Contrôle Interne et Externe</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex molestias modi iusto dolores odio inventore amet culpa dicta! Quasi inventore quod veritatis exercitationem expedita! Quidem ipsam ratione debitis voluptas nesciunt?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, amet!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---call to action end--->
 
 <?php get_footer(); ?>
