@@ -95,14 +95,14 @@
                                     <div class="header_menu_box">
                                         <div class="navigation_menu">
                                             <ul id="myNavbar" class="navbar_nav">
-                                                <li class="menu-item nav-item active">
+                                                <li class="menu-item nav-item">
                                                     <a href="http://localhost/bionatura/" class="nav-link"><span>Accueil</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
-                                                    <a href="#" class="nav-link"><span>A propos</span></a>
+                                                    <a href="http://localhost/bionatura/a-propos/" class="nav-link"><span>A propos</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
-                                                    <a href="#" class="nav-link"><span>Notre mission</span></a>
+                                                    <a href="http://localhost/bionatura/notre-mission/" class="nav-link"><span>Notre mission</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
                                                     <a href="#" class="nav-link"><span>Projets sociaux</span></a>

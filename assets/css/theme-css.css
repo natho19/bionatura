@@ -18879,8 +18879,8 @@ header .flaticon-list {
 }
 .image_boxes.style_two .image {
     position: relative;
-    width: 270px;
-    height: 370px;
+    /* width: 270px;
+    height: 370px; */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -22826,7 +22826,7 @@ form .wpcf7-response-output {
     position: relative;
 }
 .description_box p {
-    margin: 0;
+    margin-bottom: 20px;
 }
 .description_box p span {
     color: var(--primary-color-one);
