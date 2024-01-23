@@ -358,22 +358,22 @@
         }
     }
     /*---====================---floating menu---======================---*/
-    function creote_floating_menu() {
-        $('.float_menu_box li').click(function () {
-            // If the clicked element has the active class, remove the active class from EVERY .nav-link>.state element
-            if ($(this).hasClass('active')) {
-                $('.floating_menu_text').removeClass('active');
-            }
-            // Else, the element doesn't have the active class, so we remove it from every element before applying it to the element that was clicked
-            else {
-                $('.floating_menu_text').removeClass('active');
-                $(this).addClass('active');
-            }
-        });
-        $('.floating_menu_box .close').click(function () {
-            $('.floating_menu_box').addClass('remove_floating');
-        });
-    }
+    // function creote_floating_menu() {
+    //     $('.float_menu_box li').click(function () {
+    //         // If the clicked element has the active class, remove the active class from EVERY .nav-link>.state element
+    //         if ($(this).hasClass('active')) {
+    //             $('.floating_menu_text').removeClass('active');
+    //         }
+    //         // Else, the element doesn't have the active class, so we remove it from every element before applying it to the element that was clicked
+    //         else {
+    //             $('.floating_menu_text').removeClass('active');
+    //             $(this).addClass('active');
+    //         }
+    //     });
+    //     $('.floating_menu_box .close').click(function () {
+    //         $('.floating_menu_box').addClass('remove_floating');
+    //     });
+    // }
 
     /*---====================---grid layout---======================---*/
     function creote_grid_filter_layout() {
@@ -634,7 +634,7 @@
             creote_progress_bar();
             creote_sidemenu();
             creote_floating_menu_enable();
-            creote_floating_menu();
+            // creote_floating_menu();
             creote_projectfilter();
             creote_preloader();
             creote_swiper_options();

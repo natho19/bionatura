@@ -1,43 +1,11 @@
 
-                <!---newsteller--->
-                <section class="newsteller style_one bg_dark_1">
-                    <!--===============spacing==============-->
-                    <div class="pd_top_40"></div>
-                    <!--===============spacing==============-->
-                    <div class="auto-container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-12">
-                            <div class="content">
-                                <h2>Join Our Mailing List</h2>
-                                <p>For receiving our news and updates in your inbox directly. </p>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                            <div class="item_scubscribe">
-                                <div class="input_group">
-                                    <form class="mc4wp-form" method="post" data-name="Subscibe">
-                                        <div class="mc4wp-form-fields">
-                                        <input type="email" name="EMAIL" placeholder="Your email address" required="">
-                                        <input type="submit" value="Sign up">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--===============spacing==============-->
-                    <div class="pd_bottom_40"></div>
-                    <!--===============spacing==============-->
-                </section>
-                <!---newsteller end--->
             </div>
-        <!--===============PAGE CONTENT END==============-->
+            <!--===============PAGE CONTENT END==============-->
         </div>
         <!---============== wrapper_full =================-->
 
         <!---==============footer start =================-->
-        <div class="footer_area" id="footer_contents">
+        <footer class="footer_area" id="footer_contents">
             <div class="footer_widgets_wrap bg_dark_2">
             <!--===============spacing==============-->
             <div class="pd_top_80"></div>
@@ -251,7 +219,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
         <!---==============footer end =================-->
 
         <!---==============mobile menu =================-->
@@ -259,10 +227,6 @@
             <div class="menu-backdrop"></div>
             <nav class="menu-box">
                 <div class="close-btn"><i class="icon-close"></i></div>
-                <form role="search" method="get" action="#">
-                <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
-                <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
-                </form>
                 <div class="menu-outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
@@ -286,40 +250,9 @@
             </div>
         </div>
         <!---==============search popup end =================-->
-
-        <!---==============floating menu=================-->
-        <div class="floating_menu_box">
-            <ul class="float_menu_box">
-                <i class="close fa fa-times"></i>
-                <li class="floating_menu_text active">
-                <a href="#home"> Home </a>
-                </li>
-
-                <li class="floating_menu_text ">
-                <a href="#about">About </a>
-                </li>
-
-                <li class="floating_menu_text ">
-                <a href="#service"> Service </a>
-                </li>
-
-                <li class="floating_menu_text ">
-                <a href="#process"> Process </a>
-                </li>
-
-                <li class="floating_menu_text ">
-                <a href="#projects"> Projects </a>
-                </li>
-
-                <li class="floating_menu_text">
-                <a href="#blog"> Blog </a>
-                </li>
-            </ul>
-        </div>
-        <!---==============floating menu=================-->
     </div>
 
-   <!-- Back to top with progress indicator-->
+    <!-- Back to top with progress indicator-->
     <div class="prgoress_indicator">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />

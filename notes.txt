@@ -5,4 +5,4 @@ TODO:
 - Contact
 
 FIXME:
-- 2 logos dans le header
+- 2 logos dans le header ✅
