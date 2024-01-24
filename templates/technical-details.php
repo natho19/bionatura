@@ -2,32 +2,7 @@
 
 <?php get_header(); ?>
 
-<!----page header----->
-<div class="page_header_default style_one ">
-    <div class="parallax_cover">
-        <img src="<?= BIONATURA_IMG_URL . 'page-header-default.jpg'; ?>"  alt="bg_image" class="cover-parallax">
-    </div>
-    <div class="page_header_content">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title_inner">
-                        <div class="title_page">Détails techniques</div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="breadcrumbs creote">
-                        <ul class="breadcrumb m-auto">
-                            <li><a href="http://localhost/bionatura/">Accueil</a></li>
-                            <li class="active">Détails techniques</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!----page header----->
+<?php get_template_part('parts/header', 'page'); ?>
 
 <section class="tabs_all_box tabs_all_box_start type_two">
     <!--===============spacing==============-->
@@ -49,9 +24,9 @@
                 <div class="s_tab fade active-tab show" id="noix-de-cajou">
                     <div class="tab_content one">
                         <div class="row justify-content-center">
-                            <div class="tab_content_element col-xl-7 col-lg-8 col-md-10 col-sm-12 mb-5 mb-lg-0">
+                            <div class="tab_content_element col-xl-7 col-lg-10 col-md-12 mb-5 mb-lg-0">
                                 <div class="image">
-                                    <img src="<?= BIONATURA_IMG_URL . '1600x1800.png'; ?>" alt="img" class="w-100 img-fluid">
+                                    <img src="<?= BIONATURA_IMG_URL . '1000x1200.png'; ?>" alt="img" class="w-100 img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -60,9 +35,9 @@
                 <div class="s_tab fade" id="soja">
                     <div class="tab_content one">
                         <div class="row justify-content-center">
-                            <div class="tab_content_element col-xl-7 col-lg-8 col-md-10 col-sm-12 mb-5 mb-lg-0">
+                            <div class="tab_content_element col-xl-7 col-lg-10 col-md-12 mb-5 mb-lg-0">
                                 <div class="image">
-                                    <img src="<?= BIONATURA_IMG_URL . '1600x1800.png'; ?>" alt="img" class="w-100 img-fluid">
+                                    <img src="<?= BIONATURA_IMG_URL . '1000x1200.png'; ?>" alt="img" class="w-100 img-fluid">
                                 </div>
                             </div>
                         </div>

@@ -54,6 +54,7 @@
 .flexslider .slides img {
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 .flexslider .slides:after {
     content: '\0020';
@@ -249,6 +250,7 @@ html[xmlns] .flexslider .slides {
     margin: 0;
 }
 .flex-control-thumbs img {
+    border-radius: 5px;
     width: 100%;
     height: auto;
     display: block;

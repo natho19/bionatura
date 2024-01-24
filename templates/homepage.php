@@ -8,7 +8,7 @@
         data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
         <div class="slide-item-content">
             <div class="slide-item content_left">
-                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . 'sliders/slider-1-1.jpg'; ?>)"></div>
+                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . '1900x1200.png'; ?>)"></div>
                 <div class="auto-container">
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -27,7 +27,7 @@
         </div>
         <div class="slide-item-content">
             <div class="slide-item content_center">
-                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . 'sliders/slider-1-2.jpg'; ?>)"></div>
+                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . '1900x1200.png'; ?>)"></div>
                 <div class="auto-container">
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -46,7 +46,7 @@
         </div>
         <div class="slide-item-content">
             <div class="slide-item content_right">
-                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . 'sliders/slider-1-3.jpg'; ?>)"></div>
+                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . '1900x1200.png'; ?>)"></div>
                 <div class="auto-container">
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
                 <div class="image_boxes style_three">
-                    <img src="<?= BIONATURA_IMG_URL . 'about/about-8.jpg'; ?>" class="img-fluid object-fit-cover" alt="image">
+                    <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid object-fit-cover" alt="image">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
@@ -121,23 +121,23 @@
             <div class="col-lg-7 col-md-12">
                 <div class="flexslider">
                     <ul class="slides">
-                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-2.jpg'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . 'about/about-2.jpg'; ?>" class="img-fluid" alt="img" />
+                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
                         </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-3.jpg'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . 'about/about-3.jpg'; ?>" class="img-fluid" alt="img" />
+                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
                         </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
                         </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
                         </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
                         </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . 'about/about-4.jpg'; ?>" class="img-fluid" alt="img" />
+                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
+                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
                         </li>
                     </ul>
                 </div>
@@ -226,7 +226,7 @@
 <section class="call-to-action">
     <div class="call_to_action style_one">
         <div class="image">
-            <img src="<?= BIONATURA_IMG_URL . 'cal-action-bg-2.jpg'; ?>" class="img-fluid" alt="image">
+            <img src="<?= BIONATURA_IMG_URL . '1200x400.png'; ?>" class="img-fluid" alt="image">
         </div>
         <div class="auto-container">
             <div class="row">
