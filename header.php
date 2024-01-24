@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Bio Natura</title>
     <!-- Fav Icon -->
-    <link rel="icon" href="<?= BIONATURA_IMG_URL . 'favicon.ico'; ?>" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= BIONATURA_IMG_URL . 'favicon/apple-touch-icon.png'; ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= BIONATURA_IMG_URL . 'favicon/favicon-32x32.png'; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= BIONATURA_IMG_URL . 'favicon/favicon-16x16.png'; ?>">
     <!-- Fav Icon -->
     <!-- Google Fonts -->
     <link rel='stylesheet'
@@ -31,15 +33,15 @@
                                     <div class="contntent address">
                                         <i class="icon-placeholder"></i>
                                         <div class="text">
-                                        <small>Location</small>
-                                        <span>61W Business Str Hobert, LA </span>
+                                            <small>Location</small>
+                                            <span>61W Business Str Hobert, LA </span>
                                         </div>
                                     </div>
                                     <div class="contntent email">
                                         <i class="icon-email"></i>
                                         <div class="text">
-                                        <small>Email</small>
-                                        <a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
+                                            <small>Email</small>
+                                            <a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -47,26 +49,8 @@
                                     <div class="contntent phone">
                                         <i class="icon-phone-call"></i>
                                         <div class="text">
-                                        <small>Phone</small>
-                                        <a href="tel:+9806071234">+9806071234</a>
-                                        </div>
-                                    </div>
-                                    <div class="contntent media">
-                                        <i class="icon-share"></i>
-                                        <div class="text">
-                                        <small>Share</small>
-                                        <a href="#" target=_blank rel=nofollow>
-                                            <small>Fb</small>
-                                        </a>
-                                        <a href="#" target=_blank rel=nofollow>
-                                            <small>Tw</small>
-                                        </a>
-                                        <a href="#" target=_blank rel=nofollow>
-                                            <small>Sk</small>
-                                        </a>
-                                        <a href="#" target=_blank rel=nofollow>
-                                            <small>Te</small>
-                                        </a>
+                                            <small>Phone</small>
+                                            <a href="tel:+9806071234">+9806071234</a>
                                         </div>
                                     </div>
                                 </div>

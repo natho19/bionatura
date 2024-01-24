@@ -22198,7 +22198,7 @@ header .flaticon-list {
     text-align: center;
     display: block;
     border-radius: 50px;
-    background: var(--primary-color-two);
+    background: var(--primary-color-one);
     color: #fff;
     transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -22217,7 +22217,7 @@ header .flaticon-list {
     padding: 5px 15px;
     border-radius: 5px;
     background: #fff;
-    color: var(--primary-color-one);
+    color: var(--heading-dark);
     font-size: 13px;
     line-height: 13px;
     font-weight: 600;
@@ -22246,7 +22246,7 @@ header .flaticon-list {
     left: 20px;
 }
 .social_media_v_one ul li a:hover {
-    background: var(--primary-color-one);
+    background: var(--heading-dark);
     color: #fff;
 }
 .social_media_v_one ul li a:hover small {
