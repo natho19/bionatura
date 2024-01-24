@@ -32,7 +32,7 @@
 <!---about--->
 <section class="about-section">
     <!--===============spacing==============-->
-    <div class="pd_top_90"></div>
+    <div class="pd_top_80"></div>
     <!--===============spacing==============-->
     <div class="container">
         <div class="row">
@@ -72,7 +72,7 @@
         </div>
     </div>
     <!--===============spacing==============-->
-    <div class="pd_bottom_70"></div>
+    <div class="pd_bottom_80"></div>
     <!--===============spacing==============-->
 </section>
 <!---about end--->

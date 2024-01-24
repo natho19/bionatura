@@ -21355,6 +21355,12 @@ header .flaticon-list {
         opacity: 1;
     }
 }
+.tab_content_element {
+    padding: 30px;
+    border: 1px solid rgba(7, 133, 134, 0.1);
+    border-radius: 10px;   
+}
+
 /*----client_logo_carousel------*/
 .client_logo_carousel {
     position: relative;
@@ -26459,6 +26465,9 @@ form .wpcf7-response-output {
 }
 
 /*---======================tabs======================*-----*/
+.tabs_all_box_start {
+    padding: 30px;
+}
 .tabs_all_box_two {
     position: relative;
 }
