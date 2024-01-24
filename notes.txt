@@ -1,8 +1,13 @@
 TODO:
-- Homepage
-- A Propos
-- Notre Mission
-- Contact
+- Notre mission
+- Projets sociaux
+- Détails d'un Projet
+- Détails techniques
+- Contactez-nous
+- Ajouter leur logo
+- Personnaliser la charte graphique du site pour que ça corresponde au logo
+
+- Commencer le backend
 
 FIXME:
-- 2 logos dans le header ✅
+- Texte décrivant chaque image principale sur la galerie

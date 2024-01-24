@@ -29,52 +29,40 @@
 </div>
 <!----page header----->
 
-<!---about--->
-<section class="about-section">
+<!---image-box-section---->
+<section class="image-box-section bg_light_1 tabs_all_box tabs_all_box_start type_two">
     <!--===============spacing==============-->
-    <div class="pd_top_90"></div>
+    <div class="pd_top_80"></div>
     <!--===============spacing==============-->
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-12 ">
-                <div class="about_content position-relative z_99">
-                    <div class="title_all_box style_one text-left  dark_color">
-                        <div class="title_sections">
-                            <div class="before_title">Voir</div>
-                            <h2>Notre Mission</h2>
-                        </div>
-                    </div>
-                    <!--===============spacing==============-->
-                    <div class="pd_bottom_20"></div>
-                    <!--===============spacing==============-->
-                    <div class="description_box">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi magni est ullam magnam nisi officiis veritatis culpa quam at, recusandae omnis sint ab tenetur ratione!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime ea dolorem, quae, praesentium facilis culpa ipsa reprehenderit illum ab accusantium fugit voluptatibus velit eaque vitae, quibusdam aliquam repudiandae. Dicta aut ut enim doloribus cumque culpa fugiat, qui minima ipsa!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quam amet cumque, hic doloremque eius saepe vitae, ea libero exercitationem optio nam laborum sequi voluptatem. Aliquid maiores delectus dolore nisi.</p>
-                    </div>
-                    <!--===============spacing==============-->
-                    <div class="theme_btn_all color_one">
-                        <a href="#" target="_blank" rel="nofollow" class="theme-btn five">Nous Contacter<i class="icon-right-arrow"></i></a>
-                    </div>
-                    <!--===============spacing==============-->
-                    <div class="pd_bottom_25"></div>
-                    <!--===============spacing==============-->
+            <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
+                <div class="image_boxes style_three">
+                    <img src="<?= BIONATURA_IMG_URL . 'about/about-8.jpg'; ?>" class="img-fluid object-fit-cover" alt="image">
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-12">
-                <div class="image_boxes style_two">
-                    <img src="<?= BIONATURA_IMG_URL . 'shape-1.png'; ?>" class="background_image" alt="image">
-                    <div class="image one">
-                        <img src="<?= BIONATURA_IMG_URL . 'about/about-8.jpg'; ?>" class="img-fluid" alt="image">
+            <div class="col-xl-6 col-lg-12 tab_content one">
+                <div class="title_all_box style_one dark_color">
+                    <div class="title_sections ">
+                        <div class="before_title">Mission</div>
+                        <h2>Notre mission</h2>
+                        <div class="content_bx">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima omnis rem!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo quis, iste ipsum rerum omnis.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quasi pariatur repudiandae tempore. Vitae error sed ullam impedit, omnis tempora.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--===============spacing==============-->
-    <div class="pd_bottom_70"></div>
+    <div class="pd_bottom_80"></div>
     <!--===============spacing==============-->
 </section>
-<!---about end--->
+<!---image-box-section-end---->
 
 <?php get_footer(); ?>
