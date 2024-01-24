@@ -80,8 +80,8 @@
                         <div class="row align-items-center">
                             <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
                                 <div class="header_logo_box">
-                                    <a href="index-2.html" class="logo navbar-brand">
-                                        <img src="<?= BIONATURA_IMG_URL . 'logo-default.png'; ?>" alt="Creote Elementor" class="logo_default">
+                                    <a href="http://localhost/bionatura/" class="logo navbar-brand">
+                                        <img src="<?= BIONATURA_IMG_URL . 'logo.png'; ?>" alt="Creote Elementor" class="logo_default">
                                     </a>
                                 </div>
                             </div>

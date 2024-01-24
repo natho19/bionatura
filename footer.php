@@ -17,7 +17,7 @@
                         <div class="about_company_inner">
                             <div class="footer_logo">
                                 <a href="#" target="_blank" rel="nofollow">
-                                    <img src="<?= BIONATURA_IMG_URL . 'logo-white.png'; ?>" class="img-fluid" alt="logo" />
+                                    <img src="<?= BIONATURA_IMG_URL . 'logo.png'; ?>" class="img-fluid" alt="logo" />
                                 </a>
                                 <!--===============spacing==============-->
                                 <div class="pd_bottom_30"></div>

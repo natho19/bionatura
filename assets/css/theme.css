@@ -1336,8 +1336,8 @@
 :root {
     --creote-family-one: 'Spartan', sans-serif !important;
     --creote-family-two: 'Inter', sans-serif !important;
-    --primary-color-one: #078586;
-    --primary-color-two: #282f3b;
+    --primary-color-one: #0ebe5b;
+    --primary-color-two: #054a29;
     --primary-color-three: #f0f3f9;
     --color-white: #fff;
     --primary-color-four: #fafcff;
@@ -1345,19 +1345,19 @@
     --text-color-dark: #4a4e56;
     --text-color-dark-two: #888888;
     --text-color-light: #aaafb8;
-    --heading-dark: #282f3b;
-    --link-color-dark: #282f3b;
+    --heading-dark: #6a431a;
+    --link-color-dark: #054a29;
     --border-color-dark: #e4e7ee;
     --border-color-dark-two: #373e4a;
     --border-color-light: #fbfcfe;
     --menu-color: #282f3b;
     --menu-color-white: #ffffff;
     --menu-dropdown-color: #282f3b;
-    --menu-active-color: #078586;
+    --menu-active-color: #0ebe5b;
     --box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
     --box-shadow-two: 0px 3px 16px 0px rgba(0, 0, 0, 0.05);
     --footer-default-bgcolor: #1f2530;
-    --preloader-background-color: #078586;
+    --preloader-background-color: #0ebe5b;
     --bg-light-color-one: #f0f3f947;
     --bg-light-color-two: #f0f3f969;
 }
@@ -1906,7 +1906,7 @@ body.error404 .left-sidebar .content-area {
     right: 0;
     left: 0;
     bottom: 0;
-    background: var(--primary-color-two);
+    background: var(--menu-color);
     opacity: 0.85;
     z-index: 1;
 }
@@ -3526,7 +3526,7 @@ body .enabled_custom_title .title_page .main_tit {
 .header .header_logo_box img,
 .default_sickty_heaad .header_logo_box img {
     display: block;
-    width: 170px;
+    width: 100px;
     height: auto;
     margin-bottom: 0px;
 }
@@ -7111,7 +7111,7 @@ body.single-header {
     opacity: 1;
     left: 0;
     top: 0;
-    padding: 10px 0px;
+    padding: 13px 0px;
     width: 100%;
     background: #ffffff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -19510,7 +19510,7 @@ header .flaticon-list {
     top: 0;
     bottom: 0;
     right: 0;
-    background: var(--primary-color-two);
+    background: var(--menu-color);
     opacity: 0.92;
     z-index: 1;
 }
@@ -21358,7 +21358,7 @@ header .flaticon-list {
 .tab_content_element {
     padding: 30px;
     border: 1px solid rgba(7, 133, 134, 0.1);
-    border-radius: 10px;   
+    border-radius: 10px;
 }
 
 /*----client_logo_carousel------*/
@@ -28266,7 +28266,7 @@ form .wpcf7-response-output {
 }
 
 .footer_logo img {
-    width: 150px;
+    width: 120px;
 }
 
 /*--------=========================shop css==============================----------------*/
