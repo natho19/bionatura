@@ -2,7 +2,7 @@ TODO:
 - Notre mission ✅
 - Projets sociaux ✅
 - Détails d'un Projet ✅
-- Détails techniques
+- Détails techniques ✅
 - Contactez-nous
 - Ajouter leur logo
 - Personnaliser la charte graphique du site pour que ça corresponde au logo

@@ -111,7 +111,7 @@
                                                     <a href="http://localhost/bionatura/details-techniques/" class="nav-link"><span>Détails techniques</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
-                                                    <a href="#" class="nav-link"><span>Contactez-nous</span></a>
+                                                    <a href="http://localhost/bionatura/contact/" class="nav-link"><span>Contactez-nous</span></a>
                                                 </li>
                                             </ul>
                                         </div>

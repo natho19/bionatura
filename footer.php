@@ -260,10 +260,6 @@
     </div>
 
     <!---========================== javascript ==========================-->
-    <!-- map script -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
-    <script src="assets/js/gmaps.js"></script>
-    <script src="assets/js/map-helper.js"></script> -->
     <?php wp_footer(); ?>
     <!---========================== javascript ==========================-->
 </body>

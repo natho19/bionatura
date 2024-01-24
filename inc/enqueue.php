@@ -18,5 +18,8 @@ function bionatura_load_scripts() {
     wp_enqueue_script('sharer', get_template_directory_uri() . '/assets/js/sharer.js', [], null, true);
     wp_enqueue_script('validation', get_template_directory_uri() . '/assets/js/validation.js', ['jquery'], null, true);
     wp_enqueue_script('creote-extension', get_template_directory_uri() . '/assets/js/creote-extension.js', ['jquery'], null, true);
+    wp_enqueue_script('google-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU', ['jquery'], null, true);
+    wp_enqueue_script('gmaps', get_template_directory_uri() . '/assets/js/gmaps.js', ['jquery'], null, true);
+    wp_enqueue_script('map-helper', get_template_directory_uri() . '/assets/js/map-helper.js', ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', 'bionatura_load_scripts');
