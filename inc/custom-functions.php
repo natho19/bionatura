@@ -8,3 +8,6 @@ add_filter('show_admin_bar', '__return_false');
 
 // Disable Gutenberg
 add_filter('use_block_editor_for_post', '__return_false');
+
+// Add custom image format 900x600
+add_image_size('bionatura900x600', 900, 600, true);

@@ -3,66 +3,44 @@
 <?php get_header(); ?>
 
 <!---slider-->
-<section class="slider style_four nav_position_one pag_position_two">
-    <div class="owl-carousel owl_nav_block owl_dots_block theme_carousel owl-theme"
-        data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
-        <div class="slide-item-content">
-            <div class="slide-item content_left">
-                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . '1900x1200.png'; ?>)"></div>
-                <div class="auto-container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                            <div class="slider_content pd_top_180 pd_bottom_200">
-                                <h6 class="animate_up d-inline-block">Our Vision to Grow Better</h6>
-                                <h1 class="animate_left">Inspired <br> Performance</h1>
-                                <p class="description animate_right">Duty obligations of business it will frequently occur that pleasures <br> have to be repudiated and annoyances accepted.</p>
-                                <div class="button_all animate_down">
-                                    <a href="#" target="_blank" rel="nofollow" class="theme-btn one  animated">Read More</a>
+<?php if (have_rows('slides')) : ?>
+    <section class="slider style_four nav_position_one pag_position_two">
+        <div class="owl-carousel owl_nav_block owl_dots_block theme_carousel owl-theme"
+            data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 7000, "smartSpeed": 1800, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+            <?php while (have_rows('slides')) : the_row(); ?>
+                <div class="slide-item-content">
+                    <div class="slide-item content_left">
+                        <?php if (get_sub_field('image')) : ?>
+                            <div class="image-layer" style="background-image:url(<?= esc_url(get_sub_field('image')); ?>)"></div>
+                        <?php endif; ?>
+                        <div class="auto-container">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="slider_content pd_top_180 pd_bottom_200">
+                                        <?php if (get_sub_field('tag')) : ?>
+                                            <h6 class="animate_up d-inline-block"><?php the_sub_field('tag'); ?></h6>
+                                        <?php endif; ?>
+                                        <?php if (get_sub_field('title')) : ?>
+                                            <h1 class="animate_left"><?php the_sub_field('title'); ?></h1>
+                                        <?php endif; ?>
+                                        <?php if (get_sub_field('description')) : ?>
+                                            <p class="description animate_right"><?php the_sub_field('description'); ?></p>
+                                        <?php endif; ?>
+                                        <?php if (get_sub_field('read_more')) : ?>
+                                            <div class="button_all animate_down">
+                                                <a href="<?= esc_url(get_sub_field('read_more')['url']); ?>" class="theme-btn one  animated"><?= esc_html(get_sub_field('read_more')['title']); ?></a>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            <?php endwhile; ?>
         </div>
-        <div class="slide-item-content">
-            <div class="slide-item content_center">
-                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . '1900x1200.png'; ?>)"></div>
-                <div class="auto-container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                            <div class="slider_content pd_top_180 pd_bottom_200">
-                                <h6 class="animate_up d-inline-block">Hire the Best</h6>
-                                <h1 class="animate_left">Hire Better, <br> Faster!</h1>
-                                <p class="description animate_right">On the other hand, we denounce with righteous indignation and <br> dislike men who are so beguiled.</p>
-                                <div class="button_all animate_down">
-                                    <a href="#" target="_blank" rel="nofollow" class="theme-btn one  animated">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide-item-content">
-            <div class="slide-item content_right">
-                <div class="image-layer" style="background-image:url(<?= BIONATURA_IMG_URL . '1900x1200.png'; ?>)"></div>
-                <div class="auto-container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                            <div class="slider_content pd_top_180 pd_bottom_200">
-                                <h6 class="animate_up d-inline-block">Our Vision to Grow Better</h6>
-                                <h1 class="animate_left">Countless <br> Happy Clients</h1>
-                                <p class="description animate_right">These cases are perfectly simple and easy to distinguish. In a free <br> hour, when our power of choice is untrammelled.</p>
-                                <a href="#" target=_blank rel=nofollow class="theme-btn one  animated _zoomIn"> Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
 <!---slider-end--->
 
 <!---image-box-section---->
@@ -74,22 +52,24 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
                 <div class="image_boxes style_three">
-                    <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid object-fit-cover" alt="image">
+                    <img src="<?= get_field('about_image') ? esc_url(get_field('about_image')['url']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid object-fit-cover" alt="<?= get_field('about_image') ? esc_attr(get_field('about_image')['alt']) : '900x600'; ?>">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
                 <div class="title_all_box style_one dark_color">
                     <div class="title_sections ">
-                        <div class="before_title">Qui sommes-nous ?</div>
-                        <h2>A propos</h2>
-                        <p>Our power of choice is untrammelled and when nothing prevents being able to do what we like best every pleasure.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut voluptate, quisquam officiis dignissimos cupiditate quas non dolore quia? Asperiores, ipsa natus. Illum fuga placeat fugiat perferendis sunt. Reiciendis, corporis?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt illo. Fuga perferendis at in.</p>
-                        <!--===============spacing==============-->
-                        <div class="theme_btn_all color_one mr_top_20">
-                            <a href="#" target="_blank" rel="nofollow" class="theme-btn two">En savoir plus</a>
-                        </div>
-                        <!--===============spacing==============-->
+                        <?php if (get_field('about_tag')) : ?>
+                            <div class="before_title"><?php the_field('about_tag'); ?></div>
+                        <?php endif; ?>
+                        <?php if (get_field('about_title')) : ?>
+                            <h2><?php the_field('about_title'); ?></h2>
+                        <?php endif; ?>
+                        <?php the_field('about_description'); ?>
+                        <?php if (get_field('about_read_more')) : ?>
+                            <div class="theme_btn_all color_one mr_top_20">
+                                <a href="<?= esc_url(get_field('about_read_more')['url']); ?>" class="theme-btn two"><?= esc_html(get_field('about_read_more')['title']); ?></a>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -101,141 +81,113 @@
 </section>
 <!---image-box-section-end---->
 
-<!---gallery-section---->
-<section class="gallery">
-    <!--===============spacing==============-->
-    <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title_all_box style_one text-center dark_color">
-                <div class="title_sections">
-                    <div class="before_title">Galerie</div>
-                    <h2>Bio Natura en images</h2>
-                    <p>We work with your company to identify position</p>
-                </div>
-            </div>
-            <!--===============spacing==============-->
-            <div class="pd_bottom_20"></div>
-            <!--===============spacing==============-->
-            <div class="col-lg-7 col-md-12">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
-                        </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
-                        </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
-                        </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
-                        </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
-                        </li>
-                        <li data-thumb="<?= BIONATURA_IMG_URL . '900x600.png'; ?>">
-                            <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid" alt="img" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-   </div>
-   <!--===============spacing==============-->
-   <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
-</section>
-<!---gallery-section-end---->
-
-<!---service two---->
-<section class="service-section-two bg_light_1">
-    <!--===============spacing==============-->
-    <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
-    <div class="container pd_zero">
-        <div class="row">
-            <div class="col-lg-12">
+<?php
+$images = get_field('gallery');
+if ($images) : ?>
+    <!---gallery-section---->
+    <section class="gallery">
+        <!--===============spacing==============-->
+        <div class="pd_top_80"></div>
+        <!--===============spacing==============-->
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="title_all_box style_one text-center dark_color">
                     <div class="title_sections">
-                        <div class="before_title">Comment est organisée notre production ?</div>
-                        <h2>Procédure de Production</h2>
+                        <?php if (get_field('gallery_tag')) : ?>
+                            <div class="before_title"><?php the_field('gallery_tag'); ?></div>
+                        <?php endif; ?>
+                        <?php if (get_field('gallery_title')) : ?>
+                            <h2><?php the_field('gallery_title'); ?></h2>
+                        <?php endif; ?>
                     </div>
                 </div>
-            </div>
-            <!--===============spacing==============-->
-            <div class="mr_bottom_70"></div>
-            <!--===============spacing==============-->
-        </div>
-        <div class="row gutter_15px">
-            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="service_box style_three dark_color">
-                    <div class="service_content">
-                        <div class="content_inner">
-                            <span class="icon-play"><i></i></span>
-                            <small class="nom">01</small>
-                            <h2>Employee Compensation</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="service_box style_three dark_color">
-                    <div class="service_content">
-                        <div class="content_inner">
-                            <span class="icon-play"><i></i></span>
-                            <small class="nom">02</small>
-                            <h2>Health Care Benefits</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="service_box style_three dark_color">
-                    <div class="service_content">
-                        <div class="content_inner">
-                            <span class="icon-play"><i></i></span>
-                            <small class="nom">03</small>
-                            <h2>Talent Management</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="service_box style_three dark_color">
-                    <div class="service_content">
-                        <div class="content_inner">
-                            <span class="icon-play"><i></i></span>
-                            <small class="nom">04</small>
-                            <h2>Risk Management</h2>
-                        </div>
+                <!--===============spacing==============-->
+                <div class="pd_bottom_20"></div>
+                <!--===============spacing==============-->
+                <div class="col-lg-7 col-md-12">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <?php foreach ($images as $image) : ?>
+                                <li data-thumb="<?= esc_url($image['sizes']['bionatura900x600']); ?>">
+                                    <img src="<?= esc_url($image['sizes']['bionatura900x600']); ?>" class="img-fluid" alt="<?= esc_attr($image['alt']); ?>" />
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--===============spacing==============-->
-    <div class="pd_bottom_80"></div>
-    <!--===============spacing==============-->
-</section>
+        <!--===============spacing==============-->
+        <div class="pd_top_80"></div>
+        <!--===============spacing==============-->
+    </section>
+    <!---gallery-section-end---->
+<?php endif; ?>
+
+<!---service two---->
+<?php if (have_rows('processes')) : ?>
+    <section class="service-section-two bg_light_1">
+        <!--===============spacing==============-->
+        <div class="pd_top_80"></div>
+        <!--===============spacing==============-->
+        <div class="container pd_zero">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title_all_box style_one text-center dark_color">
+                        <div class="title_sections">
+                            <?php if (get_field('process_tag')) : ?>
+                                <div class="before_title"><?php the_field('process_tag'); ?></div>
+                            <?php endif; ?>
+                            <?php if (get_field('process_title')) : ?>
+                                <h2><?php the_field('process_title'); ?></h2>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <!--===============spacing==============-->
+                <div class="mr_bottom_70"></div>
+                <!--===============spacing==============-->
+            </div>
+            <div class="row gutter_15px">
+                <?php while (have_rows('processes')) : the_row(); ?>
+                    <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12 mr_bottom_60">
+                        <div class="service_box style_three dark_color">
+                            <div class="service_content">
+                                <div class="content_inner">
+                                    <span class="icon-play"><i></i></span>
+                                    <small class="nom"><?= get_row_index(); ?></small>
+                                    <?php if (get_sub_field('name')) : ?>
+                                        <h2><?php the_sub_field('name'); ?></h2>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+        <!--===============spacing==============-->
+        <div class="pd_bottom_80"></div>
+        <!--===============spacing==============-->
+    </section>
+<?php endif; ?>
 <!---service two end---->
 
 <!---call to action--->
 <section class="call-to-action">
     <div class="call_to_action style_one">
         <div class="image">
-            <img src="<?= BIONATURA_IMG_URL . '1200x400.png'; ?>" class="img-fluid" alt="image">
+            <img src="<?= get_field('organisation_background') ? esc_url(get_field('organisation_background')['url']) : esc_url(BIONATURA_IMG_URL . '1200x400.png'); ?>" class="img-fluid" alt="<?= get_field('organisation_background') ? esc_attr(get_field('organisation_background')['alt']) : '1200x400'; ?>">
         </div>
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="left_content">
                         <div class="main_content">
-                            <h1>Organisation du Contrôle Interne et Externe</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex molestias modi iusto dolores odio inventore amet culpa dicta! Quasi inventore quod veritatis exercitationem expedita! Quidem ipsam ratione debitis voluptas nesciunt?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, amet!</p>
+                            <?php if (get_field('organisation_title')) : ?>
+                                <h1><?php the_field('organisation_title'); ?></h1>
+                            <?php endif; ?>
+                            <?php the_field('organisation_description'); ?>
                         </div>
                     </div>
                 </div>

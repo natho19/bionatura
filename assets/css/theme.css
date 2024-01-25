@@ -12487,8 +12487,10 @@ header .flaticon-list {
 .service_box.style_three {
     margin-left: 25px;
     margin-bottom: 30px;
+    height: 100%;
 }
 .service_box.style_three .service_content {
+    height: 100%;
     position: relative;
     padding: 25px;
     background: #fff;
@@ -12519,7 +12521,7 @@ header .flaticon-list {
     background: transparent;
     top: -10px;
     left: 9px;
-    border: 4px solid var(--primary-color-two);
+    border: 4px solid var(--heading-dark);
     border-radius: 50%;
     transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
