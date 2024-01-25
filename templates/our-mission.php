@@ -13,22 +13,23 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
                 <div class="image_boxes style_three">
-                    <img src="<?= BIONATURA_IMG_URL . '900x600.png'; ?>" class="img-fluid object-fit-cover" alt="image">
+                    <img src="<?= get_field('our_mission_image') ? esc_url(get_field('our_mission_image')['url']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid object-fit-cover" alt="<?= get_field('our_mission_image') ? esc_attr(get_field('our_mission_image')['alt']) : '900x600'; ?>">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12 tab_content one">
                 <div class="title_all_box style_one dark_color">
                     <div class="title_sections ">
-                        <div class="before_title">Mission</div>
-                        <h2>Notre mission</h2>
-                        <div class="content_bx">
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed?</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima omnis rem!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo quis, iste ipsum rerum omnis.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quasi pariatur repudiandae tempore. Vitae error sed ullam impedit, omnis tempora.</li>
-                            </ul>
-                        </div>
+                        <?php if (get_field('our_mission_tag')) : ?>
+                            <div class="before_title"><?php the_field('our_mission_tag'); ?></div>
+                        <?php endif; ?>
+                        <?php if (get_field('our_mission_title')) : ?>
+                            <h2><?php the_field('our_mission_title'); ?></h2>
+                        <?php endif; ?>
+                        <?php if (get_field('our_mission_description')) : ?>
+                            <div class="content_bx">
+                                <?php the_field('our_mission_description'); ?>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
