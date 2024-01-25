@@ -52,7 +52,7 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
                 <div class="image_boxes style_three">
-                    <img src="<?= get_field('about_image') ? esc_url(get_field('about_image')['url']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid object-fit-cover" alt="<?= get_field('about_image') ? esc_attr(get_field('about_image')['alt']) : '900x600'; ?>">
+                    <img src="<?= get_field('about_image') ? esc_url(get_field('about_image')['sizes']['bionatura900x600']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid object-fit-cover" alt="<?= get_field('about_image') ? esc_attr(get_field('about_image')['alt']) : '900x600'; ?>">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">

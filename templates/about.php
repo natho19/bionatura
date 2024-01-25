@@ -45,7 +45,7 @@
                 <div class="image_boxes style_two">
                     <img src="<?= BIONATURA_IMG_URL . 'shape.png'; ?>" class="background_image" alt="Shape">
                     <div class="image one">
-                        <img src="<?= get_field('bionatura_image') ? esc_url(get_field('bionatura_image')['url']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid" alt="<?= get_field('bionatura_image') ? esc_attr(get_field('bionatura_image')['alt']) : '900x600'; ?>">
+                        <img src="<?= get_field('bionatura_image') ? esc_url(get_field('bionatura_image')['sizes']['bionatura900x600']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid" alt="<?= get_field('bionatura_image') ? esc_attr(get_field('bionatura_image')['alt']) : '900x600'; ?>">
                     </div>
                 </div>
             </div>
