@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Bio Natura</title>
     <!-- Fav Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?= BIONATURA_IMG_URL . 'favicon/apple-touch-icon.png'; ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= BIONATURA_IMG_URL . 'favicon/favicon-32x32.png'; ?>">

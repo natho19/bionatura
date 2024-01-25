@@ -8,14 +8,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title_inner">
-                        <div class="title_page"><?php the_title(); ?></div>
+                        <div class="title_page"><?= is_archive() ? post_type_archive_title('', false) : get_the_title(); ?></div>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="breadcrumbs creote">
                         <ul class="breadcrumb m-auto">
                             <li><a href="<?= esc_url(get_home_url()); ?>">Accueil</a></li>
-                            <li class="active"><?php the_title(); ?></li>
+                            <li class="active"><?= is_archive() ? post_type_archive_title('', false) : get_the_title(); ?></li>
                         </ul>
                     </div>
                 </div>
