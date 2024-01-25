@@ -104,33 +104,6 @@
                         </div>
                     </div>
                 </div>
-                <!--===============spacing==============-->
-                <div class="pd_bottom_40"></div>
-                <!--===============spacing==============-->
-                <div class="social_media_v_one style_two">
-                    <ul>
-                        <li>
-                            <a href="#"> <span class="fa fa-facebook"></span>
-                                <small>facebook</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <span class="fa fa-twitter"></span>
-                                <small>twitter</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <span class="fa fa-skype"></span>
-                                <small>skype</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <span class="fa fa-instagram"></span>
-                                <small>instagram</small>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>

@@ -128,7 +128,7 @@
                                         </div>
                                         <div class="con_content">
                                             <h5>Mail Us :</h5>
-                                            <a href="tel:sendmail@creote.com"> sendmail@creote.com</a>
+                                            <a href="tel:contact@bionaturaprod.com"> contact@bionaturaprod.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@
                             <div class="pd_top_10"></div>
                             <!--===============spacing==============-->
                             <div class="footer_copy_content color_white">
-                                © 2023 <a href="https://themeforest.net/user/steelthemes">Steelthemes.</a> All Rights Reserved.
+                                Copyright &copy; 2024 Bio Natura par <a href="#">Code House</a>
                             </div>
                             <!--===============spacing==============-->
                             <div class="pd_bottom_10"></div>

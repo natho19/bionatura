@@ -33,15 +33,15 @@
                                     <div class="contntent address">
                                         <i class="icon-placeholder"></i>
                                         <div class="text">
-                                            <small>Location</small>
+                                            <small>Location :</small>
                                             <span>61W Business Str Hobert, LA </span>
                                         </div>
                                     </div>
                                     <div class="contntent email">
                                         <i class="icon-email"></i>
                                         <div class="text">
-                                            <small>Email</small>
-                                            <a href="mailto:sendmail@creote.com">sendmail@creote.com</a>
+                                            <small>Email :</small>
+                                            <a href="mailto:contact@bionaturaprod.com">contact@bionaturaprod.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@
                                     <div class="contntent phone">
                                         <i class="icon-phone-call"></i>
                                         <div class="text">
-                                            <small>Phone</small>
+                                            <small>Phone :</small>
                                             <a href="tel:+9806071234">+9806071234</a>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@
                             <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
                                 <div class="header_logo_box">
                                     <a href="http://localhost/bionatura/" class="logo navbar-brand">
-                                        <img src="<?= BIONATURA_IMG_URL . 'logo.png'; ?>" alt="Creote Elementor" class="logo_default">
+                                        <img src="<?= BIONATURA_IMG_URL . 'logo.png'; ?>" alt="Logo" class="logo_default">
                                     </a>
                                 </div>
                             </div>
