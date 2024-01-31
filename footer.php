@@ -12,7 +12,7 @@
             <!--===============spacing==============-->
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                         <div class="footer_widgets about_company light_color">
                             <div class="about_company_inner">
                                 <div class="footer_logo">
@@ -24,7 +24,7 @@
                                     <!--===============spacing==============-->
                                 </div>
                                 <div class="content_box">
-                                    <p>Duty the obligations of business will frequently occur that pleasure have too repudiated annoyances endures accepted.</p>
+                                    <p>Bio Natura Prod, située au Togo en Afrique de l'Ouest depuis 2016, est née sous l'impulsion de personnes ayant une vingtaine ans d'expérience dans la production et l'exportation de produits agricoles biologiques.</p>
                                 </div>
                             </div>
                         </div>
@@ -42,18 +42,17 @@
                             <div class="navigation_foo_box">
                                 <div class="navigation_foo_inner">
                                     <ul class="menu">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Professionals</a></li>
-                                        <li><a href="#">Insights</a></li>
-                                        <li><a href="#">HR Solutions</a></li>
+                                        <li><a href="#">A Propos</a></li>
+                                        <li><a href="#">Notre mission</a></li>
+                                        <li><a href="#">Détails techniques</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contactez-nous</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div class="footer_widgets wid_tit style_one">
                             <div class="fo_wid_title">
                                 <h2>Réseaux sociaux</h2>
@@ -72,31 +71,25 @@
                                         <li>
                                             <a href="#">
                                                 <span class="fa fa-facebook"></span>
-                                                <small>facebook</small>
+                                                <small>Facebook</small>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
                                                 <span class="fa fa-twitter"></span>
-                                                <small>twitter</small>
+                                                <small>Twitter</small>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
                                                 <span class="fa fa-linkedin"></span>
-                                                <small>linkedin</small>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="fa fa-instagram"></span>
-                                                <small>instagram</small>
+                                                <small>Linkedin</small>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
                                                 <span class="fa fa-youtube-play"></span>
-                                                <small>youtube</small>
+                                                <small>Youtube</small>
                                             </a>
                                         </li>
                                     </ul>
@@ -117,18 +110,18 @@
                             <div class="get_intouch_inrfo">
                                 <div class="foo_cont_inner">
                                     <div class="top">
-                                        <h6>Location</h6>
-                                        <p>280 Granite Run Drive Suite #200 Lancaster, PA 1760</p>
+                                        <h6>Adresse :</h6>
+                                        <p>Grand Carrefour CAP, Amadahome, Lomé</p>
                                     </div>
                                     <div class="bottom">
                                         <h6>Contact</h6>
                                         <div class="con_content">
-                                            <h5>Phone :</h5>
-                                            <a href="tel:+9806071234"> +98 060 712 34</a>
+                                            <h5>Email :</h5>
+                                            <p><a href="tel:=info@bionaturaprod.com">info@bionaturaprod.com</a></p>
                                         </div>
                                         <div class="con_content">
-                                            <h5>Mail Us :</h5>
-                                            <a href="tel:contact@bionaturaprod.com"> contact@bionaturaprod.com</a>
+                                            <h5>Phone :</h5>
+                                            <p>+228 90060929 / 97622515</p>
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +142,7 @@
                             <div class="pd_top_10"></div>
                             <!--===============spacing==============-->
                             <div class="footer_copy_content color_white">
-                                Copyright &copy; 2024 Bio Natura par <a href="#">Code House</a>
+                                Copyright &copy; <?= date('Y'); ?> Bio Natura Prod par <a href="#">Code House</a>
                             </div>
                             <!--===============spacing==============-->
                             <div class="pd_bottom_10"></div>

@@ -44,15 +44,18 @@
 <!---slider-end--->
 
 <!---image-box-section---->
-<section class="image-box-section bg_light_1">
+<section class="image-box-section">
     <!--===============spacing==============-->
     <div class="pd_top_80"></div>
     <!--===============spacing==============-->
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
-                <div class="image_boxes style_three">
-                    <img src="<?= get_field('about_image') ? esc_url(get_field('about_image')['sizes']['bionatura900x600']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid object-fit-cover" alt="<?= get_field('about_image') ? esc_attr(get_field('about_image')['alt']) : '900x600'; ?>">
+                <div class="image_boxes style_two">
+                    <img src="<?= BIONATURA_IMG_URL . 'shape.png'; ?>" class="background_image shape_left" alt="Shape">
+                    <div class="image one">
+                        <img src="<?= get_field('about_image') ? esc_url(get_field('about_image')['sizes']['bionatura900x600']) : esc_url(BIONATURA_IMG_URL . '900x600.png'); ?>" class="img-fluid" alt="<?= get_field('about_image') ? esc_attr(get_field('about_image')['alt']) : '900x600'; ?>">
+                    </div>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
@@ -83,9 +86,10 @@
 
 <?php
 $images = get_field('gallery');
+
 if ($images) : ?>
     <!---gallery-section---->
-    <section class="gallery">
+    <section class="gallery bg_light_1">
         <!--===============spacing==============-->
         <div class="pd_top_80"></div>
         <!--===============spacing==============-->
@@ -126,7 +130,7 @@ if ($images) : ?>
 
 <!---service two---->
 <?php if (have_rows('processes')) : ?>
-    <section class="service-section-two bg_light_1">
+    <section class="service-section-two <?= $images ? '' : 'bg_light_1'; ?>">
         <!--===============spacing==============-->
         <div class="pd_top_80"></div>
         <!--===============spacing==============-->
@@ -174,27 +178,29 @@ if ($images) : ?>
 <!---service two end---->
 
 <!---call to action--->
-<section class="call-to-action">
-    <div class="call_to_action style_one">
-        <div class="image">
-            <img src="<?= get_field('organisation_background') ? esc_url(get_field('organisation_background')['url']) : esc_url(BIONATURA_IMG_URL . '1200x400.png'); ?>" class="img-fluid" alt="<?= get_field('organisation_background') ? esc_attr(get_field('organisation_background')['alt']) : '1200x400'; ?>">
-        </div>
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="left_content">
-                        <div class="main_content">
-                            <?php if (get_field('organisation_title')) : ?>
-                                <h1><?php the_field('organisation_title'); ?></h1>
-                            <?php endif; ?>
-                            <?php the_field('organisation_description'); ?>
+<?php if (get_field('organisation_description')) : ?>
+    <section class="call-to-action">
+        <div class="call_to_action style_one">
+            <div class="image">
+                <img src="<?= get_field('organisation_background') ? esc_url(get_field('organisation_background')['url']) : esc_url(BIONATURA_IMG_URL . '1200x400.png'); ?>" class="img-fluid" alt="<?= get_field('organisation_background') ? esc_attr(get_field('organisation_background')['alt']) : '1200x400'; ?>">
+            </div>
+            <div class="auto-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="left_content">
+                            <div class="main_content">
+                                <?php if (get_field('organisation_title')) : ?>
+                                    <h1><?php the_field('organisation_title'); ?></h1>
+                                <?php endif; ?>
+                                <?php the_field('organisation_description'); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
 <!---call to action end--->
 
 <?php get_footer(); ?>

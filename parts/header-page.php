@@ -1,7 +1,7 @@
 <!----page header----->
 <div class="page_header_default style_one ">
     <div class="parallax_cover">
-        <img src="<?= BIONATURA_IMG_URL . '1200x400.png'; ?>"  alt="bg_image" class="cover-parallax">
+        <img src="<?= BIONATURA_IMG_URL . 'banner.jpg'; ?>"  alt="bg_image" class="cover-parallax">
     </div>
     <div class="page_header_content">
         <div class="auto-container">

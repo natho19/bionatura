@@ -1,6 +1,6 @@
 {
     "key": "group_65b2b5704a811",
-    "title": "Bio Natura",
+    "title": "Bio Natura Prod",
     "fields": [
         {
             "key": "field_65b2b57053014",
@@ -109,7 +109,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/about.php"
+                "value": "templates/about.php"
             }
         ]
     ],

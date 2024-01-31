@@ -32,15 +32,15 @@
                                     <div class="contntent address">
                                         <i class="icon-placeholder"></i>
                                         <div class="text">
-                                            <small>Location :</small>
-                                            <span>61W Business Str Hobert, LA </span>
+                                            <small>Adresse :</small>
+                                            <span>Grand Carrefour CAP, Amadahome, Lomé</span>
                                         </div>
                                     </div>
                                     <div class="contntent email">
                                         <i class="icon-email"></i>
                                         <div class="text">
                                             <small>Email :</small>
-                                            <a href="mailto:contact@bionaturaprod.com">contact@bionaturaprod.com</a>
+                                            <a href="mailto:info@bionaturaprod.com">info@bionaturaprod.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -48,8 +48,8 @@
                                     <div class="contntent phone">
                                         <i class="icon-phone-call"></i>
                                         <div class="text">
-                                            <small>Phone :</small>
-                                            <a href="tel:+9806071234">+9806071234</a>
+                                            <small>Téléphone :</small>
+                                            <span>+228 90060929 / 97622515</span>
                                         </div>
                                     </div>
                                 </div>
