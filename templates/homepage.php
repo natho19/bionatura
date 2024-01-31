@@ -86,7 +86,6 @@
 
 <?php
 $images = get_field('gallery');
-
 if ($images) : ?>
     <!---gallery-section---->
     <section class="gallery bg_light_1">

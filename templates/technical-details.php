@@ -12,32 +12,23 @@
         <div class="tabs_header clearfix">
             <ul class="showcase_tabs_btns nav-pills nav clearfix">
                 <li class="nav-item">
-                    <a class="s_tab_btn nav-link active" data-tab="#noix-de-cajou">Noix de cajou</a>
+                    <a class="s_tab_btn nav-link active" data-tab="#soja">Soja</a>
                 </li>
+                <!-- Pas de classe active pour le nav-link sans contenu
                 <li class="nav-item">
-                    <a class="s_tab_btn nav-link" data-tab="#soja">Soja</a>
-                </li>
+                    <a class="s_tab_btn nav-link" data-tab="#noix-de-cajou">Noix de cajou</a>
+                </li> -->
             </ul>
         </div>
         <div class="s_tab_wrapper">
             <div class="s_tabs_content">
-                <div class="s_tab fade active-tab show" id="noix-de-cajou">
+                <div class="s_tab fade active-tab show" id="soja">
                     <div class="tab_content one">
                         <div class="row justify-content-center">
                             <div class="tab_content_element col-xl-7 col-lg-10 col-md-12 mb-5 mb-lg-0">
                                 <div class="image">
-                                    <img src="<?= BIONATURA_IMG_URL . '1000x1200.png'; ?>" alt="img" class="w-100 img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="s_tab fade" id="soja">
-                    <div class="tab_content one">
-                        <div class="row justify-content-center">
-                            <div class="tab_content_element col-xl-7 col-lg-10 col-md-12 mb-5 mb-lg-0">
-                                <div class="image">
-                                    <img src="<?= BIONATURA_IMG_URL . '1000x1200.png'; ?>" alt="img" class="w-100 img-fluid">
+                                    <img src="<?= BIONATURA_IMG_URL . 'spec_soja_1.jpg'; ?>" alt="img" class="w-100 img-fluid">
+                                    <img src="<?= BIONATURA_IMG_URL . 'spec_soja_2.jpg'; ?>" alt="img" class="w-100 img-fluid">
                                 </div>
                             </div>
                         </div>

@@ -88,10 +88,10 @@
                                                     <a href="http://localhost/bionatura/notre-mission/" class="nav-link"><span>Notre mission</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
-                                                    <a href="http://localhost/bionatura/projets/" class="nav-link"><span>Projets sociaux</span></a>
+                                                    <a href="http://localhost/bionatura/details-techniques/" class="nav-link"><span>Détails techniques</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
-                                                    <a href="http://localhost/bionatura/details-techniques/" class="nav-link"><span>Détails techniques</span></a>
+                                                    <a href="http://localhost/bionatura/actualites/" class="nav-link"><span>Actualités</span></a>
                                                 </li>
                                                 <li class="menu-item nav-item">
                                                     <a href="http://localhost/bionatura/contact/" class="nav-link"><span>Contactez-nous</span></a>

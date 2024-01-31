@@ -1899,7 +1899,8 @@ body.error404 .left-sidebar .content-area {
     overflow: hidden;
     align-items: center;
 }
-.slider.style_four .slide-item-content .image-layer::before, .page_header_default::before {
+.slider.style_four .slide-item-content .image-layer::before,
+.page_header_default::before {
     position: absolute;
     content: '';
     top: 0;
@@ -14467,6 +14468,7 @@ header .flaticon-list {
     margin-bottom: 15px;
     padding-bottom: 15px;
 }
+
 .project_information .repeat_informtion h6 {
     font-size: 13px;
     font-weight: 600;
@@ -14476,9 +14478,11 @@ header .flaticon-list {
 .project_information .repeat_informtion p {
     margin: 0px;
     font-size: 15px;
+    text-transform: capitalize;
 }
 .project_information .social_medias {
     position: relative;
+    margin-bottom: 0;
 }
 .project_information .social_medias a {
     display: inline-block;
@@ -18881,7 +18885,7 @@ header .flaticon-list {
 }
 .image_boxes.style_two .shape_left {
     transform: rotateY(180deg);
-    left: -37px;  
+    left: -37px;
 }
 
 .image_boxes.style_two .image {
@@ -21362,8 +21366,14 @@ header .flaticon-list {
         opacity: 1;
     }
 }
+
 .tab_content_element {
-    padding: 30px;
+    max-height: 1000px;
+    overflow-y: scroll;
+}
+
+.tab_content_element img {
+    margin-bottom: 25px;
     border: 1px solid rgba(7, 133, 134, 0.1);
     border-radius: 10px;
 }
@@ -22837,7 +22847,7 @@ form .wpcf7-response-output {
 
 /*-----description_box-------*/
 .single_project_image {
-    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 .description_box {

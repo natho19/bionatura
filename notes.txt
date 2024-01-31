@@ -1,7 +1,12 @@
 TODO:
 - Commencer le backend
-
+- Pagination
+- Page A propos version tablette et mobile image avant le texte
 - Page 404
+- Partage des réseaux sociaux
+- Menus
+- Widgets
+- Options
 
 FIXME:
 - Texte décrivant chaque image principale sur la galerie

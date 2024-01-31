@@ -42,10 +42,10 @@
                             <div class="navigation_foo_box">
                                 <div class="navigation_foo_inner">
                                     <ul class="menu">
-                                        <li><a href="#">A Propos</a></li>
-                                        <li><a href="#">Notre mission</a></li>
-                                        <li><a href="#">Détails techniques</a></li>
-                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="http://localhost/bionatura/a-propos/">A Propos</a></li>
+                                        <li><a href="http://localhost/bionatura/notre-mission/">Notre mission</a></li>
+                                        <li><a href="http://localhost/bionatura/details-techniques/">Détails techniques</a></li>
+                                        <li><a href="http://localhost/bionatura/actualites/">Actualités</a></li>
                                         <li><a href="#">Contactez-nous</a></li>
                                     </ul>
                                 </div>

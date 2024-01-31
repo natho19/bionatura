@@ -102,6 +102,22 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_65ba9fd250a1d",
+            "label": "En savoir plus (copier)",
+            "name": "about_read_more_copier",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -122,5 +138,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706202704
+    "modified": 1706729432
 }
