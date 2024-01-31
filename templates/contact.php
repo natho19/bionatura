@@ -14,41 +14,41 @@
                 <div class="contact_form_box_all type_one">
                     <div class="contact_form_box_inner">
                         <div class="contact_form_shortcode">
-                            <form id="contact-form" method="post" action="https://themepanthers.com/html/creote-html/contact.php" role="form">
-                                <div class="messages"></div>
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                            <label> Your Name<br /></label>
-                                                <input type="text" name="name" placeholder="Your Name *" required="required" data-error="Enter Your Name">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
+                            <form id="contact-form" method="post" action="#" role="form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Nom</label>
+                                            <input type="text" name="last-name" placeholder="Nom *" required="required">
                                         </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                            <label> Your Email<br /></label>
-                                                <input type="text" name="email" required="required" placeholder="Email *" data-error="Enter Your Email Id">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Prénoms</label>
+                                            <input type="text" name="first-name" placeholder="Prénoms *" required="required">
                                         </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                            <label> Your Subject<br /></label>
-                                                <input type="text" name="subject" required="required" placeholder=" Subject  (Optional)">
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" name="email" required="required" placeholder="Email *">
                                         </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                            <label> Your Message<br /></label>
-                                                <textarea name="message" placeholder="Additional Information... (Optional) " rows="3" required="required" data-error="Please, leave us a message."></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Sujet</label>
+                                            <input type="text" name="subject" required="required" placeholder="Sujet">
                                         </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group mg_top apbtn">
-                                                <button class="theme_btn" type="submit">Appointment</button>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Votre Message</label>
+                                            <textarea name="message" placeholder="Votre Message..." rows="3" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group mg_top apbtn">
+                                            <button class="theme_btn" type="submit">Soumettre</button>
                                         </div>
                                     </div>
                                 </div>
@@ -60,9 +60,9 @@
             <div class="col-xl-6 col-lg-6 pd_left_30">
                 <div class="title_all_box style_one dark_color">
                     <div class="title_sections left">
-                        <div class="before_title">Contact Info to</div>
-                        <h2>Reach Our Expert Team</h2>
-                        <p>Send a message through given form, If your enquiry is time sensitive please use below contact details.</p>
+                        <div class="before_title">Contactez-nous</div>
+                        <h2>Contactez notre équipe d'experts</h2>
+                        <p>Envoyez un message à l'aide du formulaire. Si votre demande est urgente, veuillez utiliser les coordonnées ci-dessous.</p>
                     </div>
                 </div>
                 <div class="contact_box_content style_one">
@@ -71,8 +71,8 @@
                             <span class=" icon-placeholder"></span>
                         </div>
                         <div class="contnet">
-                            <h3> Post Address </h3>
-                            <p>280 Granite Run Drive Suite #200 Lancaster, PA 1760</p>
+                            <h3>Adresse</h3>
+                            <p>Grand Carrefour CAP, Amadahome, Lomé</p>
                         </div>
                     </div>
                 </div>
@@ -85,8 +85,9 @@
                             <span class="icon-phone-call"></span>
                         </div>
                         <div class="contnet">
-                            <h3> General Enquires </h3>
-                            <p>Phone: +98 060 712 34 &amp; Email: sendmail@qetus.com</p>
+                            <h3>Questions générales</h3>
+                            <p>Email : <a href="mailto:info@bionaturaprod.com">info@bionaturaprod.com</a></p>
+                            <p>Téléphone : +228 90060929 / 97622515</p>
                         </div>
                     </div>
                 </div>
@@ -99,8 +100,8 @@
                             <span class="fa fa-clock-o"></span>
                         </div>
                         <div class="contnet">
-                            <h3>Operation Hours</h3>
-                            <p>Mon-Satday: 09.00 to 07.00 (Sunday: Closed)</p>
+                            <h3>Heures d'ouverture</h3>
+                            <p>Lundi-Vendredi : 08h00 à 18h00 ; Samedi : 09h00 à 14h00 (Dimanche : fermé)</p>
                         </div>
                     </div>
                 </div>
@@ -111,12 +112,11 @@
     <div class="pd_top_80"></div>
     <!--===============spacing==============-->
 </section>
-<section class="contact-map-section">
+<!-- <section class="contact-map-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <section class="map-section">
-                    <!--Map Outer-->
                     <div class="map-outer">
                         <div class="google-map"
                             id="contact-google-map" 
@@ -136,9 +136,7 @@
             </div>
         </div>
     </div>
-   <!--===============spacing==============-->
    <div class="pd_top_80"></div>
-   <!--===============spacing==============-->
-</section>
+</section> -->
 
 <?php get_footer(); ?>
