@@ -101,7 +101,7 @@
                         </div>
                         <div class="contnet">
                             <h3>Heures d'ouverture</h3>
-                            <p>Lundi-Vendredi : 08h00 à 18h00 ; Samedi : 09h00 à 14h00 (Dimanche : fermé)</p>
+                            <p>Lundi à Vendredi : 08h00 - 12h30 ; 14h30 - 17h30</p>
                         </div>
                     </div>
                 </div>

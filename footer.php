@@ -81,7 +81,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.linkedin.com/company/bio-natura-prod/">
                                                 <span class="fa fa-linkedin"></span>
                                                 <small>Linkedin</small>
                                             </a>

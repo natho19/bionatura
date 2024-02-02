@@ -1,5 +1,4 @@
 TODO:
-- Commencer le backend
 - Dynamiser la page Détails techniques
 - Afficher la carte
 - Dynamiser la page Contactez-nous
@@ -7,7 +6,6 @@ TODO:
 - Partage d'un article sur les réseaux sociaux
 - Page A propos version tablette et mobile image avant le texte
 - Page 404
-- Partage des réseaux sociaux
 - Menus
 - Widgets
 - Options
