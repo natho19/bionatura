@@ -2,7 +2,7 @@ TODO:
 - Section Actualités sur la page d'accueil
 - Ajouter un article avec le post sur la page Linkedin ✅
 - Créer les adresses emails ✅
-- Dynamiser le reste de la page Accueil
+- Dynamiser le reste de la page Accueil ✅
 - Page A propos version tablette et mobile image avant le texte
 - Dynamiser la page Détails techniques
 - Afficher la carte
