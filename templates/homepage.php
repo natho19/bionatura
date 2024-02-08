@@ -121,6 +121,50 @@
 </section>
 <!---call to action end--->
 
+<?php if (have_rows('news')) : ?>
+<section class="project_all filt_style_four">
+    <div class="container">
+        <!--===============spacing==============-->
+        <div class="pd_top_80"></div>
+        <!--===============spacing==============-->
+        <div class="row justify-content-center">
+            <div class="title_all_box style_one text-center dark_color">
+                <div class="title_sections">
+                    <?php if (get_field('news_tag')) : ?>
+                        <div class="before_title"><?php the_field('news_tag'); ?></div>
+                    <?php endif; ?>
+                    <?php if (get_field('news_title')) : ?>
+                        <h2><?php the_field('news_title'); ?></h2>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <!--===============spacing==============-->
+            <div class="pd_bottom_20"></div>
+        </div>
+        <div class="project_all filt_style_three">
+            <div class="project_container clearfix">
+                <div class="row clearfix">
+                    <?php while (have_rows('news')) : the_row(); ?>
+                        <?php $post = get_sub_field('post'); if ($post) : ?>
+                            <?php get_template_part('parts/content', 'post'); ?>
+                        <?php endif; wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+        </div>
+        <?php if (get_field('news_read_more')) : ?>
+            <div class="theme_btn_all color_one mr_top_20 text-center">
+                <a href="<?= esc_url(get_field('news_read_more')['url']); ?>" class="theme-btn two"><?= esc_html(get_field('news_read_more')['title']); ?></a>
+            </div>
+        <?php endif; ?>
+        <!--===============spacing==============-->
+        <div class="pd_bottom_80"></div>
+        <!--===============spacing==============-->
+    </div>
+</section>
+<?php endif; ?>
+
+
 <?php
 $images = get_field('gallery');
 if ($images) : ?>
