@@ -5,7 +5,7 @@
 <?php get_template_part('parts/header', 'page'); ?>
 
 <!---image-box-section---->
-<section class="image-box-section tabs_all_box tabs_all_box_start type_two">
+<section class="image-box-section tabs_all_box type_two">
     <!--===============spacing==============-->
     <div class="pd_top_80"></div>
     <!--===============spacing==============-->

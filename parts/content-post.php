@@ -5,7 +5,7 @@
         </div>
         <div class="project_caro_content">
             <div class="left_side">
-                <h2 class="title_pro"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <h2 class="title_pro mr_bottom_15"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             </div>
             <div class="right_side">
                 <a href="<?php the_permalink(); ?>"><i class="icon-right-arrow"></i></a>

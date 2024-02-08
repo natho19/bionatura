@@ -1,10 +1,14 @@
 TODO:
+- Section Actualités sur la page d'accueil
+- Ajouter un article avec le post sur la page Linkedin ✅
+- Créer les adresses emails ✅
+- Dynamiser le reste de la page Accueil
+- Page A propos version tablette et mobile image avant le texte
 - Dynamiser la page Détails techniques
 - Afficher la carte
 - Dynamiser la page Contactez-nous
 - Pagination
 - Partage d'un article sur les réseaux sociaux
-- Page A propos version tablette et mobile image avant le texte
 - Page 404
 - Menus
 - Widgets

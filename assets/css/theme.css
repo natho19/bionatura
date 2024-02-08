@@ -19586,9 +19586,9 @@ header .flaticon-list {
     height: 56px;
     border-radius: 50%;
     text-align: center;
-    color: #ffffff;
-    background: transparent;
-    border: 1px dashed #ffffff;
+    color: #FF0000;
+    background: #FFFFFF;
+    /* border: 1px dashed #ffffff; */
     margin: auto;
 }
 .call_to_action.style_one .bottom_content .call_content .content_bx {

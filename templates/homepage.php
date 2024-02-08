@@ -84,6 +84,43 @@
 </section>
 <!---image-box-section-end---->
 
+<!---call to action--->
+<section class="call-to-action">
+    <div class="call_to_action style_one">
+        <div class="image">
+            <img src="<?= BIONATURA_IMG_URL . 'slide-1.jpg'; ?>" class="img-fluid" alt="Bannière"/>
+        </div>
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left_content">
+                        <div class="main_content">
+                            <div class="video_box">
+                                <a href="https://www.youtube.com/embed/wblnDjLq0Aw" class="lightbox-image"><i class="icon-play"></i></a>
+                            </div>
+                            <h6>Vidéo de présentation</h6>
+                            <h1>Bio Natura Prod en vidéo</h1>
+                            <div class="bottom_content">
+                                <div class="button_content">
+                                    <a href="https://www.youtube.com/@BIONATURA-Togo/videos" target="_blank" rel="nofollow" class="theme-btn three">Toutes nos vidéos</a>
+                                </div>
+                                <div class="call_content">
+                                    <span class="fa fa-youtube-play"></span>
+                                    <div class="content_bx">
+                                        <h2>Notre chaîne Youtube :</h2>
+                                        <a href="https://www.youtube.com/@BIONATURA-Togo" target="_blank">youtube.com/@BIONATURA-Togo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---call to action end--->
+
 <?php
 $images = get_field('gallery');
 if ($images) : ?>

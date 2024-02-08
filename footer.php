@@ -69,25 +69,25 @@
                                 <div class="social_media_v_one">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="#" target="_blank">
                                                 <span class="fa fa-facebook"></span>
                                                 <small>Facebook</small>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="#" target="_blank">
                                                 <span class="fa fa-twitter"></span>
                                                 <small>Twitter</small>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.linkedin.com/company/bio-natura-prod/">
+                                            <a href="https://www.linkedin.com/company/bio-natura-prod/" target="_blank">
                                                 <span class="fa fa-linkedin"></span>
                                                 <small>Linkedin</small>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.youtube.com/@BIONATURA-Togo" target="_blank">
                                                 <span class="fa fa-youtube-play"></span>
                                                 <small>Youtube</small>
                                             </a>
