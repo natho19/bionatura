@@ -32880,4 +32880,15 @@ body.side_menu_toggled .style-switcher {
     .breadcrumbs ul li {
         display: inline-block;
     }
+}
+
+.acf-map {
+    width: 100%;
+    height: 545px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow-two);
+}
+
+.acf-map img {
+    max-width: inherit !important;
 } /*# sourceMappingURL=theme-css.css.map */

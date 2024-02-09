@@ -106,33 +106,20 @@
     <div class="pd_top_80"></div>
 </section>
 
-<!-- TODO: -->
 <!-- Google Map -->
-<!-- <section class="contact-map-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <section class="map-section">
-                    <div class="map-outer">
-                        <div class="google-map"
-                            id="contact-google-map" 
-                            data-map-lat="44.231172" 
-                            data-map-lng="-76.485954" 
-                            data-icon-path="assets/images/pin.png" 
-                            data-map-title="Alabama, USA" 
-                            data-map-zoom="12" 
-                            data-markers='{
-                            "marker-1": [42.231172, -84.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
-                            "marker-2": [44.231172, -76.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
-                            "marker-3": [40.880550, -78.393705, "<h4>Branch Office</h4><p>4/99 Pennsylvania, USA</p>"]
-                            }'>
-                        </div>
+<?php $location = get_field('location'); if ($location) : ?>
+    <section class="contact-map-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="acf-map" data-zoom="16">
+                        <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
-    </div>
-   <div class="pd_top_80"></div>
-</section> -->
+    <div class="pd_top_80"></div>
+    </section>
+<?php endif; ?>
 
 <?php get_footer(); ?>

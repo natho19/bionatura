@@ -1,11 +1,9 @@
 TODO:
-- Code review ✅
-- Afficher la carte
-- Dynamiser la page Contactez-nous
-- Pagination
 - Partage d'un article sur les réseaux sociaux
+- Pagination
 - Page 404
 - Dynamiser la page Détails techniques
+- Dynamiser la page Contactez-nous
 - Menus
 - Widgets
 - Options
@@ -16,5 +14,4 @@ TODO:
     * Dans le footer Conditions d'utilisation et Politique de confidentialité se retrouvent à droite à partir de la tablette jusqu'au mobile
 
 FIXME:
-- Mise en ligne des modifications WARNING !!!
 - Texte décrivant chaque image principale sur la galerie
