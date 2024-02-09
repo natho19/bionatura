@@ -2,11 +2,10 @@
 
 <?php get_template_part('parts/header', 'page'); ?>
 
+<!-- Actualités -->
 <section class="project_all filt_style_four">
     <div class="container">
-        <!--===============spacing==============-->
         <div class="pd_top_80"></div>
-        <!--===============spacing==============-->
         <?php if (have_posts()) : ?>
             <div class="project_all filt_style_three">
                 <div class="project_container clearfix">
@@ -20,9 +19,7 @@
         <?php else : ?>
             <?php get_template_part('parts/content', 'none'); ?>
         <?php endif; ?>
-        <!--===============spacing==============-->
         <div class="pd_bottom_80"></div>
-        <!--===============spacing==============-->
     </div>
 </section>
 

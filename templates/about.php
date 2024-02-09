@@ -4,11 +4,9 @@
 
 <?php get_template_part('parts/header', 'page'); ?>
 
-<!---about--->
+<!-- Bio Natura Prod -->
 <section class="about-section">
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-12 ">
@@ -23,9 +21,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                    <!--===============spacing==============-->
                     <div class="pd_bottom_20"></div>
-                    <!--===============spacing==============-->
                     <?php if (get_field('bionatura_description')) : ?>
                         <div class="description_box">
                             <?php the_field('bionatura_description'); ?>
@@ -36,9 +32,7 @@
                             <a href="<?= esc_url(get_field('bionatura_button')['url']); ?>" class="theme-btn two"><?= esc_html(get_field('bionatura_button')['title']); ?></a>
                         </div>
                     <?php endif; ?>
-                    <!--===============spacing==============-->
                     <div class="pd_bottom_25"></div>
-                    <!--===============spacing==============-->
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12">
@@ -51,10 +45,7 @@
             </div>
         </div>
     </div>
-    <!--===============spacing==============-->
     <div class="pd_bottom_80"></div>
-    <!--===============spacing==============-->
 </section>
-<!---about end--->
 
 <?php get_footer(); ?>

@@ -1,4 +1,4 @@
-<!----page header----->
+<!-- Page Header -->
 <?php $terms = get_queried_object(); ?>
 <div class="page_header_default style_one ">
     <div class="parallax_cover">
@@ -24,4 +24,3 @@
         </div>
     </div>
 </div>
-<!----page header----->

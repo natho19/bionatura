@@ -4,10 +4,9 @@
 
 <?php get_template_part('parts/header', 'page'); ?>
 
+<!-- Détails techniques -->
 <section class="tabs_all_box tabs_all_box_start type_two">
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
     <div class="tab_over_all_box">
         <div class="tabs_header clearfix">
             <ul class="showcase_tabs_btns nav-pills nav clearfix">
@@ -37,9 +36,7 @@
             </div>
         </div>
     </div>
-    <!--===============spacing==============-->
     <div class="pd_bottom_80"></div>
-    <!--===============spacing==============-->
 </section>
 
 <?php get_footer(); ?>

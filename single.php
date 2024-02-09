@@ -2,10 +2,9 @@
 
 <?php get_template_part('parts/header', 'page'); ?>
 
+<!-- Détails d'un article -->
 <section class="project-detail-section">
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-12 mb-5 mb-md-5 mb-xl-0">
@@ -15,15 +14,13 @@
                         <h2><?php the_title(); ?></h2>
                     </div>
                 </div>
-                <!--===============spacing==============-->
                 <div class="pd_bottom_10"></div>
-                <!--===============spacing==============-->
                 <?php if (!empty(get_the_content())) : ?>
                     <div class="description_box">
                         <?php the_content(); ?>
                     </div>
                 <?php endif; ?>
-            </div>            
+            </div>
             <div class="col-lg-4 col-md-12">
                 <div class="project_information">
                     <h2>Détails de l'article</h2>
@@ -48,10 +45,8 @@
                 </div>
             </div>
         </div>
-    </div>    
-    <!--===============spacing==============-->
+    </div>
     <div class="pd_bottom_80"></div>
-    <!--===============spacing==============-->                          
 </section>
 
 <?php get_footer(); ?>

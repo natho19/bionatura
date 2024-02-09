@@ -4,10 +4,9 @@
 
 <?php get_template_part('parts/header', 'page'); ?>
 
+<!-- Contact -->
 <section class="contact-section">
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6 mb-5 mb-lg-5 mb-xl-0">
@@ -76,9 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <!--===============spacing==============-->
                 <div class="pd_bottom_15"></div>
-                <!--===============spacing==============-->
                 <div class="contact_box_content style_one">
                     <div class="contact_box_inner icon_yes">
                         <div class="icon_bx">
@@ -91,9 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <!--===============spacing==============-->
                 <div class="pd_bottom_15"></div>
-                <!--===============spacing==============-->
                 <div class="contact_box_content style_one">
                     <div class="contact_box_inner icon_yes">
                         <div class="icon_bx">
@@ -108,10 +103,11 @@
             </div>
         </div>
     </div>
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
 </section>
+
+<!-- TODO: -->
+<!-- Google Map -->
 <!-- <section class="contact-map-section">
     <div class="container">
         <div class="row">

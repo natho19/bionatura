@@ -4,11 +4,9 @@
 
 <?php get_template_part('parts/header', 'page'); ?>
 
-<!---image-box-section---->
+<!-- Notre mission -->
 <section class="image-box-section tabs_all_box type_two">
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
@@ -43,10 +41,7 @@
             </div>
         </div>
     </div>
-    <!--===============spacing==============-->
     <div class="pd_bottom_80"></div>
-    <!--===============spacing==============-->
 </section>
-<!---image-box-section-end---->
 
 <?php get_footer(); ?>

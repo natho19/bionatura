@@ -1,18 +1,20 @@
 TODO:
-- Section Actualités sur la page d'accueil
-- Ajouter un article avec le post sur la page Linkedin ✅
-- Créer les adresses emails ✅
-- Dynamiser le reste de la page Accueil ✅
-- Page A propos version tablette et mobile image avant le texte
-- Dynamiser la page Détails techniques
+- Code review ✅
 - Afficher la carte
 - Dynamiser la page Contactez-nous
 - Pagination
 - Partage d'un article sur les réseaux sociaux
 - Page 404
+- Dynamiser la page Détails techniques
 - Menus
 - Widgets
 - Options
+- Lire comment le menu est géré automatiquement par JavaScript (même menu dans le header)
+
+- Responsive :
+    * Page A propos version tablette et mobile image avant le texte
+    * Dans le footer Conditions d'utilisation et Politique de confidentialité se retrouvent à droite à partir de la tablette jusqu'au mobile
 
 FIXME:
+- Mise en ligne des modifications WARNING !!!
 - Texte décrivant chaque image principale sur la galerie

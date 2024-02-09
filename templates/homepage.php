@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<!---slider-->
+<!-- Slides -->
 <?php if (have_rows('slides')) : ?>
     <section class="slider style_four nav_position_one pag_position_two">
         <div class="owl-carousel owl_nav_block owl_dots_block theme_carousel owl-theme"
@@ -41,13 +41,10 @@
         </div>
     </section>
 <?php endif; ?>
-<!---slider-end--->
 
-<!---image-box-section---->
+<!-- A Propos -->
 <section class="image-box-section">
-    <!--===============spacing==============-->
     <div class="pd_top_80"></div>
-    <!--===============spacing==============-->
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
@@ -78,18 +75,15 @@
             </div>
         </div>
     </div>
-    <!--===============spacing==============-->
     <div class="pd_bottom_80"></div>
-    <!--===============spacing==============-->
 </section>
-<!---image-box-section-end---->
 
-<!---call to action--->
+<!-- Vidéo -->
 <?php if (get_field('video_link')) : ?>
     <section class="call-to-action">
         <div class="call_to_action style_one">
             <div class="image">
-            <img src="<?= get_field('video_background') ? esc_url(get_field('video_background')['url']) : esc_url(BIONATURA_IMG_URL . '1200x400.png'); ?>" class="img-fluid" alt="<?= get_field('video_background') ? esc_attr(get_field('video_background')['alt']) : '1200x400'; ?>">
+                <img src="<?= get_field('video_background') ? esc_url(get_field('video_background')['url']) : esc_url(BIONATURA_IMG_URL . '1200x400.png'); ?>" class="img-fluid" alt="<?= get_field('video_background') ? esc_attr(get_field('video_background')['alt']) : '1200x400'; ?>">
             </div>
             <div class="auto-container">
                 <div class="row">
@@ -97,7 +91,9 @@
                         <div class="left_content">
                             <div class="main_content">
                                 <div class="video_box">
-                                    <a href="<?= esc_attr(get_field('video_link')); ?>" class="lightbox-image"><i class="icon-play"></i></a>
+                                    <a href="<?= esc_attr(get_field('video_link')); ?>" class="lightbox-image">
+                                        <i class="icon-play"></i>
+                                    </a>
                                 </div>
                                 <?php if (get_field('video_tag')) : ?>
                                     <h6><?php the_field('video_tag'); ?></h6>
@@ -129,59 +125,50 @@
         </div>
     </section>
 <?php endif; ?>
-<!---call to action end--->
 
+<!-- Articles à la une -->
 <?php if (have_rows('news')) : ?>
-<section class="project_all filt_style_four">
-    <div class="container">
-        <!--===============spacing==============-->
-        <div class="pd_top_80"></div>
-        <!--===============spacing==============-->
-        <div class="row justify-content-center">
-            <div class="title_all_box style_one text-center dark_color">
-                <div class="title_sections">
-                    <?php if (get_field('news_tag')) : ?>
-                        <div class="before_title"><?php the_field('news_tag'); ?></div>
-                    <?php endif; ?>
-                    <?php if (get_field('news_title')) : ?>
-                        <h2><?php the_field('news_title'); ?></h2>
-                    <?php endif; ?>
+    <section class="project_all filt_style_four">
+        <div class="container">
+            <div class="pd_top_80"></div>
+            <div class="row justify-content-center">
+                <div class="title_all_box style_one text-center dark_color">
+                    <div class="title_sections">
+                        <?php if (get_field('news_tag')) : ?>
+                            <div class="before_title"><?php the_field('news_tag'); ?></div>
+                        <?php endif; ?>
+                        <?php if (get_field('news_title')) : ?>
+                            <h2><?php the_field('news_title'); ?></h2>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="pd_bottom_20"></div>
+            </div>
+            <div class="project_all filt_style_three">
+                <div class="project_container clearfix">
+                    <div class="row clearfix">
+                        <?php while (have_rows('news')) : the_row(); ?>
+                            <?php $post = get_sub_field('post'); if ($post) : ?>
+                                <?php get_template_part('parts/content', 'post'); ?>
+                            <?php endif; wp_reset_postdata(); ?>
+                        <?php endwhile; ?>
+                    </div>
                 </div>
             </div>
-            <!--===============spacing==============-->
-            <div class="pd_bottom_20"></div>
-        </div>
-        <div class="project_all filt_style_three">
-            <div class="project_container clearfix">
-                <div class="row clearfix">
-                    <?php while (have_rows('news')) : the_row(); ?>
-                        <?php $post = get_sub_field('post'); if ($post) : ?>
-                            <?php get_template_part('parts/content', 'post'); ?>
-                        <?php endif; wp_reset_postdata(); ?>
-                    <?php endwhile; ?>
+            <?php if (get_field('news_read_more')) : ?>
+                <div class="theme_btn_all color_one mr_top_20 text-center">
+                    <a href="<?= esc_url(get_field('news_read_more')['url']); ?>" class="theme-btn two"><?= esc_html(get_field('news_read_more')['title']); ?></a>
                 </div>
-            </div>
+            <?php endif; ?>
+            <div class="pd_bottom_80"></div>
         </div>
-        <?php if (get_field('news_read_more')) : ?>
-            <div class="theme_btn_all color_one mr_top_20 text-center">
-                <a href="<?= esc_url(get_field('news_read_more')['url']); ?>" class="theme-btn two"><?= esc_html(get_field('news_read_more')['title']); ?></a>
-            </div>
-        <?php endif; ?>
-        <!--===============spacing==============-->
-        <div class="pd_bottom_80"></div>
-        <!--===============spacing==============-->
-    </div>
-</section>
+    </section>
 <?php endif; ?>
 
-<?php
-$images = get_field('gallery');
-if ($images) : ?>
-    <!---gallery-section---->
+<!-- Galerie -->
+<?php $images = get_field('gallery'); if ($images) : ?>
     <section class="gallery bg_light_1">
-        <!--===============spacing==============-->
         <div class="pd_top_80"></div>
-        <!--===============spacing==============-->
         <div class="container">
             <div class="row justify-content-center">
                 <div class="title_all_box style_one text-center dark_color">
@@ -194,9 +181,7 @@ if ($images) : ?>
                         <?php endif; ?>
                     </div>
                 </div>
-                <!--===============spacing==============-->
                 <div class="pd_bottom_20"></div>
-                <!--===============spacing==============-->
                 <div class="col-lg-7 col-md-12">
                     <div class="flexslider">
                         <ul class="slides">
@@ -210,19 +195,14 @@ if ($images) : ?>
                 </div>
             </div>
         </div>
-        <!--===============spacing==============-->
         <div class="pd_top_80"></div>
-        <!--===============spacing==============-->
     </section>
-    <!---gallery-section-end---->
 <?php endif; ?>
 
-<!---service two---->
+<!-- Procédure de production -->
 <?php if (have_rows('processes')) : ?>
     <section class="service-section-two <?= $images ? '' : 'bg_light_1'; ?>">
-        <!--===============spacing==============-->
         <div class="pd_top_80"></div>
-        <!--===============spacing==============-->
         <div class="container pd_zero">
             <div class="row">
                 <div class="col-lg-12">
@@ -237,9 +217,7 @@ if ($images) : ?>
                         </div>
                     </div>
                 </div>
-                <!--===============spacing==============-->
                 <div class="mr_bottom_70"></div>
-                <!--===============spacing==============-->
             </div>
             <div class="row gutter_15px">
                 <?php while (have_rows('processes')) : the_row(); ?>
@@ -247,7 +225,7 @@ if ($images) : ?>
                         <div class="service_box style_three dark_color">
                             <div class="service_content">
                                 <div class="content_inner">
-                                    <span class="icon-play"><i></i></span>
+                                    <span class="icon-play"><i class="circle"></i></span>
                                     <small class="nom"><?= get_row_index(); ?></small>
                                     <?php if (get_sub_field('name')) : ?>
                                         <h2><?php the_sub_field('name'); ?></h2>
@@ -259,37 +237,8 @@ if ($images) : ?>
                 <?php endwhile; ?>
             </div>
         </div>
-        <!--===============spacing==============-->
         <div class="pd_bottom_80"></div>
-        <!--===============spacing==============-->
     </section>
 <?php endif; ?>
-<!---service two end---->
-
-<!---call to action--->
-<?php if (get_field('organisation_description')) : ?>
-    <section class="call-to-action">
-        <div class="call_to_action style_one">
-            <div class="image">
-                <img src="<?= get_field('organisation_background') ? esc_url(get_field('organisation_background')['url']) : esc_url(BIONATURA_IMG_URL . '1200x400.png'); ?>" class="img-fluid" alt="<?= get_field('organisation_background') ? esc_attr(get_field('organisation_background')['alt']) : '1200x400'; ?>">
-            </div>
-            <div class="auto-container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="left_content">
-                            <div class="main_content">
-                                <?php if (get_field('organisation_title')) : ?>
-                                    <h1><?php the_field('organisation_title'); ?></h1>
-                                <?php endif; ?>
-                                <?php the_field('organisation_description'); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
-<!---call to action end--->
 
 <?php get_footer(); ?>
