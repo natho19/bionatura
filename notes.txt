@@ -15,3 +15,4 @@ TODO:
 
 FIXME:
 - Texte décrivant chaque image principale sur la galerie
+

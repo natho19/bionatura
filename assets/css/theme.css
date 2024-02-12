@@ -14469,7 +14469,12 @@ header .flaticon-list {
     padding-bottom: 15px;
 }
 
-.project_information .repeat_informtion h6 {
+.description_box .repeat_informtion {
+    margin-top: 30px;
+}
+
+.project_information .repeat_informtion h6,
+.description_box .repeat_informtion h6 {
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -14484,7 +14489,8 @@ header .flaticon-list {
     position: relative;
     margin-bottom: 0;
 }
-.project_information .social_medias a {
+.project_information .social_medias a,
+.description_box .social_medias a {
     display: inline-block;
     width: 40px;
     height: 40px;
