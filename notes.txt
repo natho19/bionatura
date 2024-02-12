@@ -1,18 +1,17 @@
 TODO:
-- Partage d'un article sur les réseaux sociaux ✅
-- Page 404
-- Dynamiser la page Contactez-nous
+- Dynamiser la page Contact
 - Dynamiser la page Détails techniques
 - Pagination
 - Menus
 - Widgets
 - Options
-- Lire comment le menu est géré automatiquement par JavaScript (même menu dans le header)
 
 - Responsive :
     * Page A propos version tablette et mobile image avant le texte
     * Dans le footer Conditions d'utilisation et Politique de confidentialité se retrouvent à droite à partir de la tablette jusqu'au mobile
+    * Checker le responsive pour toutes les pages
 
 FIXME:
 - Texte décrivant chaque image principale sur la galerie
+- Lire comment le menu est géré automatiquement par JavaScript (même menu dans le header)
 

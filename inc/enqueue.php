@@ -15,9 +15,10 @@ function bionatura_load_scripts() {
     wp_enqueue_script('simpleParallax', get_template_directory_uri() . '/assets/js/simpleParallax.min.js', [], null, true);
     wp_enqueue_script('appear', get_template_directory_uri() . '/assets/js/appear.js', ['jquery'], null, true);
     wp_enqueue_script('jquery.countTo', get_template_directory_uri() . '/assets/js/jquery.countTo.js', ['jquery'], null, true);
-    wp_enqueue_script('sharer', get_template_directory_uri() . '/assets/js/sharer.js', [], null, true);
     // wp_enqueue_script('validation', get_template_directory_uri() . '/assets/js/validation.js', ['jquery'], null, true);
-    wp_enqueue_script('acf-map', get_template_directory_uri() . '/assets/js/acf-map.js', ['jquery'], null, true);
+    if (is_page('contact')) {
+        wp_enqueue_script('acf-map', get_template_directory_uri() . '/assets/js/acf-map.js', ['jquery'], null, true);
+    }
     wp_enqueue_script('creote-extension', get_template_directory_uri() . '/assets/js/creote-extension.js', ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', 'bionatura_load_scripts');

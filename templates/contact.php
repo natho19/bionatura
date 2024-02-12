@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group mg_top apbtn">
-                                            <button class="theme_btn" type="submit">Soumettre</button>
+                                            <button class="theme_btn" type="submit">Envoyer</button>
                                         </div>
                                     </div>
                                 </div>
