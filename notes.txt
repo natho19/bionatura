@@ -1,9 +1,9 @@
 TODO:
-- Partage d'un article sur les réseaux sociaux
-- Pagination
+- Partage d'un article sur les réseaux sociaux ✅
 - Page 404
-- Dynamiser la page Détails techniques
 - Dynamiser la page Contactez-nous
+- Dynamiser la page Détails techniques
+- Pagination
 - Menus
 - Widgets
 - Options

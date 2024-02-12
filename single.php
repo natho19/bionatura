@@ -29,18 +29,6 @@
                             <h6>Date de publication :</h6>
                             <p><?= get_the_date('d F Y'); ?></p>
                         </div>
-                        <div class="repeat_informtion social_medias">
-                            <h6>Partager :</h6>
-                            <a href="#">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                            <a href="#">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                            <a href="#">
-                                <span class="fa fa-linkedin"></span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

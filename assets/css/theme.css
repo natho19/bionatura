@@ -14510,7 +14510,8 @@ header .flaticon-list {
 .project_information .social_medias a:last-child {
     margin-right: 0px;
 }
-.project_information .social_medias a:hover {
+.project_information .social_medias a:hover,
+.description_box .social_medias a:hover {
     color: #fff;
     background: var(--primary-color-one);
     border-color: var(--primary-color-one);
