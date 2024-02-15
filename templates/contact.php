@@ -13,45 +13,8 @@
                 <div class="contact_form_box_all type_one">
                     <div class="contact_form_box_inner">
                         <div class="contact_form_shortcode">
-                            <form id="contact-form" method="post" action="#" role="form">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label>Nom</label>
-                                            <input type="text" name="last-name" placeholder="Nom *" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label>Prénoms</label>
-                                            <input type="text" name="first-name" placeholder="Prénoms *" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="text" name="email" required="required" placeholder="Email *">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label>Sujet</label>
-                                            <input type="text" name="subject" required="required" placeholder="Sujet">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label>Votre Message</label>
-                                            <textarea name="message" placeholder="Votre Message..." rows="3" required="required"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group mg_top apbtn">
-                                            <button class="theme_btn" type="submit">Envoyer</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            <!-- Mettre le lien du formulaire de Contact ici -->
+                            <?= do_shortcode('[contact-form-7 id="a083f46" title="Formulaire de contact"]'); ?>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ TODO:
 - Menus
 - Widgets
 - Options
+- Anti spam akismet
 
 - Responsive :
     * Page A propos version tablette et mobile image avant le texte
@@ -14,4 +15,3 @@ TODO:
 FIXME:
 - Texte décrivant chaque image principale sur la galerie
 - Lire comment le menu est géré automatiquement par JavaScript (même menu dans le header)
-

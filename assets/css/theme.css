@@ -4732,7 +4732,7 @@ body .enabled_custom_title .title_page .main_tit {
     color: var(--primary-color-one);
     text-transform: none;
 }
-.modal_popup .modal-popup-inner .form_inner .wpcf7-response-output {
+/* .modal_popup .modal-popup-inner .form_inner .wpcf7-response-output {
     position: absolute;
     z-index: 11;
     background: var(--primary-color-one);
@@ -4753,8 +4753,8 @@ body .enabled_custom_title .title_page .main_tit {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
-}
-.modal_popup .modal-popup-inner .form_inner .wpcf7-response-output::before {
+} */
+/* .modal_popup .modal-popup-inner .form_inner .wpcf7-response-output::before {
     position: absolute;
     content: '';
     left: 0;
@@ -4767,7 +4767,7 @@ body .enabled_custom_title .title_page .main_tit {
     border-bottom: 10px solid var(--primary-color-one);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-}
+} */
 .modal_popup .modal-popup-inner .about_company_inner {
     position: relative;
     border-radius: 10px;
@@ -8643,7 +8643,7 @@ header .flaticon-list {
     font-size: 17px;
     line-height: 27px;
     font-weight: 400;
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, 0.75);
     margin-bottom: 30px;
     opacity: 0;
     transition: 0.9s ease-in-out;
@@ -19593,8 +19593,8 @@ header .flaticon-list {
     height: 56px;
     border-radius: 50%;
     text-align: center;
-    color: #FF0000;
-    background: #FFFFFF;
+    color: #ff0000;
+    background: #ffffff;
     /* border: 1px dashed #ffffff; */
     margin: auto;
 }
@@ -22471,11 +22471,11 @@ form br {
 .contact_form_box_all input[type='number'],
 .contact_form_box_all textarea,
 .contact_form_box_all select {
-    margin: 6px 0px 25px !important;
+    margin: 6px 0px !important;
 }
 .contact_form_box_all input[type='submit'],
 .contact_form_box_all button[type='submit'] {
-    margin-bottom: 10px !important;
+    margin: 15px 0 !important;
 }
 .contact_form_box_all label {
     position: relative;
@@ -22517,7 +22517,7 @@ form br {
 }
 .contact_form_box_all.type_one .contact_form_box_inner .contact_form_shortcode p {
     position: relative;
-    margin: 0px;
+    margin-top: 15px;
 }
 .contact_form_box_all.type_one .contact_form_box_inner .contact_form_shortcode p i {
     position: absolute;
@@ -22541,14 +22541,39 @@ form br {
     .contact_form_box_inner
     .contact_form_shortcode
     .wpcf7-not-valid-tip {
-    font-size: 15px;
+    font-size: 12.5px;
     font-weight: 400;
     font-family: var(--creote-family-one);
     line-height: 26px;
-    color: var(--primary-color-one);
+    margin-bottom: 10px;
+    color: #dc3545;
     text-transform: none;
 }
-.contact_form_box_all.type_one
+.wpcf7 form .wpcf7-response-output {
+    border: 1px solid #721c24;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 15px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.wpcf7 form.aborted .wpcf7-response-output,
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* .contact_form_box_all.type_one
     .contact_form_box_inner
     .contact_form_shortcode
     .wpcf7-response-output {
@@ -22589,7 +22614,7 @@ form br {
     border-bottom: 10px solid var(--primary-color-one);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-}
+} */
 .contact_form_box_all.type_two {
     position: relative;
 }
@@ -22788,7 +22813,7 @@ form br {
 form {
     position: relative;
 }
-form .wpcf7-response-output {
+/* form .wpcf7-response-output {
     position: absolute;
     padding: 15px 40px !important;
     border-radius: 5px;
@@ -22804,7 +22829,7 @@ form .wpcf7-response-output {
     left: 0;
     display: block;
     margin: 0px !important;
-}
+} */
 
 /*-============fourntcontent====================-*/
 .error-404 {
@@ -31848,9 +31873,9 @@ body.side_menu_toggled .style-switcher {
         top: inherit;
         bottom: 0px;
     }
-    .contact_form_box_all.type_one .contact_form_box_inner .contact_form_shortcode p {
+    /* .contact_form_box_all.type_one .contact_form_box_inner .contact_form_shortcode p {
         margin-bottom: 15px !important;
-    }
+    } */
     .slider.style_one:before,
     .slider.style_four:before {
         display: none;
