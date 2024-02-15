@@ -1,9 +1,13 @@
+<?php global $bionatura_options; ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/png" sizes="512x512" href="<?= BIONATURA_IMG_URL . 'favicon/android-chrome-512x512.png'; ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?= BIONATURA_IMG_URL . 'favicon/android-chrome-192x192.png'; ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?= BIONATURA_IMG_URL . 'favicon/apple-touch-icon.png'; ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= BIONATURA_IMG_URL . 'favicon/favicon-32x32.png'; ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= BIONATURA_IMG_URL . 'favicon/favicon-16x16.png'; ?>">

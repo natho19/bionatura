@@ -1,11 +1,12 @@
 TODO:
-- Dynamiser la page Contact
+- Code review
 - Dynamiser la page Détails techniques
 - Pagination
 - Menus
 - Widgets
 - Options
 - Anti spam akismet
+- Erreurs dans la console pour la page Contact
 
 - Responsive :
     * Page A propos version tablette et mobile image avant le texte

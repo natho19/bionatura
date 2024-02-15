@@ -22,47 +22,65 @@
             <div class="col-xl-6 col-lg-6 pd_left_30">
                 <div class="title_all_box style_one dark_color">
                     <div class="title_sections left">
-                        <div class="before_title">Contactez-nous</div>
-                        <h2>Contactez notre équipe d'experts</h2>
-                        <p>Envoyez un message à l'aide du formulaire. Si votre demande est urgente, veuillez utiliser les coordonnées ci-dessous.</p>
+                        <?php if (get_field('contact_tag')) : ?>
+                            <div class="before_title"><?php the_field('contact_tag'); ?></div>
+                        <?php endif; ?>
+                        <?php if (get_field('contact_title')) : ?>
+                            <h2><?php the_field('contact_title'); ?></h2>
+                        <?php endif; ?>
+                        <?php if (get_field('contact_description')) : ?>
+                            <p><?php the_field('contact_description'); ?></p>
+                        <?php endif; ?>
                     </div>
                 </div>
-                <div class="contact_box_content style_one">
-                    <div class="contact_box_inner icon_yes">
-                        <div class="icon_bx">
-                            <span class=" icon-placeholder"></span>
-                        </div>
-                        <div class="contnet">
-                            <h3>Adresse</h3>
-                            <p>Grand Carrefour CAP, Amadahome, Lomé</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pd_bottom_15"></div>
-                <div class="contact_box_content style_one">
-                    <div class="contact_box_inner icon_yes">
-                        <div class="icon_bx">
-                            <span class="icon-phone-call"></span>
-                        </div>
-                        <div class="contnet">
-                            <h3>Questions générales</h3>
-                            <p>Email : <a href="mailto:info@bionaturaprod.com">info@bionaturaprod.com</a></p>
-                            <p>Téléphone : +228 90060929 / 97622515</p>
+                <?php if ($bionatura_options['address']) : ?>
+                    <div class="contact_box_content style_one">
+                        <div class="contact_box_inner icon_yes">
+                            <div class="icon_bx">
+                                <span class=" icon-placeholder"></span>
+                            </div>
+                            <div class="contnet">
+                                <h3>Adresse</h3>
+                                <p><?= $bionatura_options['address']; ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pd_bottom_15"></div>
-                <div class="contact_box_content style_one">
-                    <div class="contact_box_inner icon_yes">
-                        <div class="icon_bx">
-                            <span class="fa fa-clock-o"></span>
-                        </div>
-                        <div class="contnet">
-                            <h3>Heures d'ouverture</h3>
-                            <p>Lundi à Vendredi : 08h00 - 12h30 ; 14h30 - 17h30</p>
+                    <div class="pd_bottom_15"></div>
+                <?php endif; ?>
+
+                <?php if ($bionatura_options['email'] || $bionatura_options['telephone']) : ?>
+                    <div class="contact_box_content style_one">
+                        <div class="contact_box_inner icon_yes">
+                            <div class="icon_bx">
+                                <span class="icon-phone-call"></span>
+                            </div>
+                            <div class="contnet">
+                                <h3>Questions générales</h3>
+                                <?php if ($bionatura_options['email']) : ?>
+                                    <p>Email : <a href="mailto:<?= $bionatura_options['email']; ?>"><?= $bionatura_options['email']; ?></a></p>
+                                <?php endif; ?>
+                                <?php if ($bionatura_options['telephone']) : ?>
+                                    <p><?= $bionatura_options['telephone']; ?></p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="pd_bottom_15"></div>
+                <?php endif; ?>
+
+                <?php if ($bionatura_options['hours']) : ?>
+                    <div class="contact_box_content style_one">
+                        <div class="contact_box_inner icon_yes">
+                            <div class="icon_bx">
+                                <span class="fa fa-clock-o"></span>
+                            </div>
+                            <div class="contnet">
+                                <h3>Heures d'ouverture</h3>
+                                <p><?= $bionatura_options['hours']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
